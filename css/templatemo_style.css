@@ -250,6 +250,15 @@ p {
   margin-bottom: 30px;
 }
 
+.banner-content h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
 .banner-content ul {
   padding: 0;
   margin: 0;
