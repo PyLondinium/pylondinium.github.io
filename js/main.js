@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
         topMenu = $(".menu-first"),
         topMenuHeight = 80,
         // All list items
-        menuItems = topMenu.find("a"),
+        menuItems = topMenu.find("a").not("a[href*=\"mailto\"]"),
         // Anchors corresponding to menu items
         scrollItems = menuItems.map(function(){
 
