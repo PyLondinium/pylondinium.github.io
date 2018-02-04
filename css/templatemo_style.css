@@ -118,6 +118,21 @@ p {
   color: #121212;
 }
 
+
+.subsection-heading {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.subsection-heading h5 {
+  margin-top: 0;
+  font-size: 23px;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: #121212;
+}
+
 .section-heading p {
   color: #7a7a7a;
   padding: 0px 25%;
@@ -360,8 +375,9 @@ p {
   background-color: transparent;
 }
 
-
-
+.the-venue p {
+  color: #7a7a7a;
+}
 
 .what-we-do {
   background-color: #fff;
@@ -614,19 +630,14 @@ p {
 
 
 
-#contact-us {
+#the-venue {
   background-color: #fff;
   text-align: left;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
-#contact-us .section-heading {
+#the-venue .section-heading {
   color: #121212;
-}
-
-
-#contact-us .pop-button {
-  margin-top: 30px;
 }
 
 #contact input {

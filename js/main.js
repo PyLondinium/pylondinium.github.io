@@ -113,12 +113,10 @@ jQuery(document).ready(function($) {
     });
 
 
-    $('a[href*=#]').not("a[href^=#speaker]").on('click', function(e) {
+    $('a[href*=#]').not("a[href^=#speaker]").not("#contact-us-link").on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top -79 }, 500, 'linear');
     });
-
-
 
 
 });
