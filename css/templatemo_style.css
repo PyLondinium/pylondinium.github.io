@@ -204,7 +204,7 @@ p {
 }
 .menu-first {
   float: right;
-  margin-left: 
+  margin-left:
 }
 .menu-first li a {
   color: #7a7a7a;
@@ -298,13 +298,13 @@ p {
 }
 
 
-.intro {
+.intro, .schedule, #news {
   background-color: #46bae2;
   text-align: center;
   padding: 80px 0px;
 }
 
-.intro h4 {
+.intro h4, .schedule h4 {
   margin-top: 0px;
   font-size: 44px;
   font-weight: 300;
@@ -501,54 +501,6 @@ p {
 
 
 
-#blog {
-  background-color: #f4f4f4;
-}
-
-#blog .section-heading {
-  text-align: center;
-}
-
-.wrapper {
-  text-align: left;
-}
-
-#blog .tabs {
-  list-style: none;
-  margin-top: 0px;
-}
-
-#blog .tabs li {
-  display: block;
-  text-align: left;
-  margin-bottom: 29px;
-}
-
-#blog .tabs a {
-  display:block;
-  text-align: left;
-  text-decoration:none;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color:#121212;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 24px 25px;
-  background-color: #fff;
-  transition: all 0.3s;
-  box-shadow: 0px 0px 10px #cdcdcd;
-}
-
-#blog .tabs .active {
-  background-color: #46bae2;
-  color: #fff!important;
-}
-#blog .tabs .active .info-post li {
-  color: #fff!important;
-}
-#blog .tabs .active .info-post li i {
-  color: #fff!important;
-}
 #first-tab-group {
   margin-top: 0px;
   margin-bottom: 15px;
@@ -780,7 +732,7 @@ footer .back-to-top i {
   .navbar-brand {
     float: none;
   }
-  
+
   .menu-first {
     margin: 0px;
     padding: 0px;
@@ -813,13 +765,13 @@ footer .back-to-top i {
   .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
     background-color: #f2745f;
   }
-  
+
 
 }
 
 @media (max-width: 385px){
 
-  
+
 
 }
 
