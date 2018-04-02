@@ -23,13 +23,15 @@ If a participant engages in behavior that violates this code of conduct, the con
 Where does the code of conduct apply
 -----------------------------------------
 This code of conduct applies to all spaces managed by PyLondinium. This includes:
-Conferences (including social events and peripheral activities)
-Unconferences and sprints
-Workshops
-Presentation materials used in talks or sessions
-Slack
-Mailing lists
-GitHub
+
+- Conferences (including social events and peripheral activities)
+- Unconferences and sprints
+- Workshops
+- Presentation materials used in talks or sessions
+- Slack
+- Mailing lists
+- GitHub
+
 Any other forums created by the which the community uses for communication.
  
 In addition, violations of this code outside these spaces may affect a person’s ability to participate within them.
@@ -50,8 +52,11 @@ Conference staff will be happy to help participants contact security or local la
 Incident response guidelines
 ------------------------------------------
 Should you observe or experience behaviour that is disrupting to the friendly environment of the event then please get into contact with our support team about it. In some cases this may even make sense for seemingly minor incidents if the observed behaviour may become harassing through frequent repetition.
+
 If an ongoing conflict is observed then please consult with the support team immediately and try to separate the involved parties if possible (if police intervention is in order do not hesitate to call them directly). The support team will try to reinstate the peace and investigate the incident afterwards by taking reports from everyone involved and observing third parties.
+
 The support team and organisers shall assist any party who wants to press charges by notifying and guiding them to the relevant authorities. The support team should offer further assistance to all parties (e.g. by contacting a friend, arranging an escort) to help them deal with the aftermath of an incident.
+
 Enforcement actions will usually only be taken be taken by the organisers once a written report is submitted by the support team. Any person at the receiving end of such action shall be given a chance to dispute the claims against them. Failure to cooperate with the organisers will result in immediate actions and may also result in further actions including criminal charges if applicable.
 
 
