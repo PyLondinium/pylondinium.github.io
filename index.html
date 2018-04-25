@@ -26,23 +26,23 @@ http://www.templatemo.com/tm-508-power
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
         <script>
-          function loadJSON(callback) {   
+          function loadJSON(callback) {
             var xobj = new XMLHttpRequest();
             xobj.overrideMimeType("application/json");
-            xobj.open('GET', 'talks.json', false); 
+            xobj.open('GET', 'talks.json', false);
             xobj.onreadystatechange = function () {
                   if (xobj.readyState == 4 && xobj.status == "200") {
                     callback(xobj.responseText);
                   }
             };
-            xobj.send(null);  
+            xobj.send(null);
           }
 
           var talks;
           loadJSON(function(response) {
               talks = JSON.parse(response);
           });
-          
+
           function writeTitle(talkId) {
             if (talks && talks[talkId]){
               document.write(`<a href="talk.html?talk_id=${talkId}">${talks[talkId].title}</a>`);
@@ -346,8 +346,8 @@ http://www.templatemo.com/tm-508-power
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">10:30</th>
-                                    <td><!--<script>writeTitle(3)</script>--></td>
-                                    <td></td>
+                                    <td><script>writeTitle(0)</script></td>
+                                    <td><script>writeTitle(1)</script></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">11:00</th>
@@ -355,18 +355,18 @@ http://www.templatemo.com/tm-508-power
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">11:20</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(2)</script></td>
+                                    <td><script>writeTitle(3)</script></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">11:50</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(4)</script></td>
+                                    <td><script>writeTitle(5)</script></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">12:20</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(6)</script></td>
+                                    <td><script>writeTitle(7)</script></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">12:50</th>
@@ -374,27 +374,27 @@ http://www.templatemo.com/tm-508-power
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">14:30</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(8)</script></td>
+                                    <td><script>writeTitle(9)</script></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">15:00</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(11)</script></td>
+                                    <td><script>writeTitle(12)</script></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">15:30</th>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="text-right">16:00</th>
                                     <td colspan="2" class="text-center">Coffee</td>
                                 </tr>
                                 <tr>
+                                    <th scope="row" class="text-right">16:00</th>
+                                    <td><script>writeTitle(13)</script></td>
+                                    <td>Open Space</td>
+                                </tr>
+                                <tr>
                                     <th scope="row" class="text-right">16:20</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(10)</script></td>
+                                    <td>Open Space</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">16:50</th>
@@ -430,8 +430,8 @@ http://www.templatemo.com/tm-508-power
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">10:30</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(15)</script></td>
+                                    <td><script>writeTitle(16)</script></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">11:00</th>
@@ -439,18 +439,18 @@ http://www.templatemo.com/tm-508-power
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">11:20</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(17)</script></td>
+                                    <td><script>writeTitle(18)</script></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">11:50</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(19)</script></td>
+                                    <td><script>writeTitle(20)</script></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">12:20</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(21)</script></td>
+                                    <td><script>writeTitle(22)</script></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">12:50</th>
@@ -458,13 +458,13 @@ http://www.templatemo.com/tm-508-power
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">14:30</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(23)</script></td>
+                                    <td>Open Space</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">15:00</th>
-                                    <td></td>
-                                    <td></td>
+                                    <td><script>writeTitle(14)</script></td>
+                                    <td>Open Space</td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">15:30</th>
