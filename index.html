@@ -24,12 +24,36 @@ http://www.templatemo.com/tm-508-power
         <link rel="shortcut icon" type="image/png" href="favicon.png">
 
         <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+
+        <script>
+          function loadJSON(callback) {   
+            var xobj = new XMLHttpRequest();
+            xobj.overrideMimeType("application/json");
+            xobj.open('GET', 'talks.json', false); 
+            xobj.onreadystatechange = function () {
+                  if (xobj.readyState == 4 && xobj.status == "200") {
+                    callback(xobj.responseText);
+                  }
+            };
+            xobj.send(null);  
+          }
+
+          var talks;
+          loadJSON(function(response) {
+              talks = JSON.parse(response);
+          });
+          
+          function writeTitle(talkId) {
+            if (talks && talks[talkId]){
+              document.write(`<a href="talk.html?talk_id=${talkId}">${talks[talkId].title}</a>`);
+            }
+          }
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="https://browsehappy.com/">Upgrade your browser today</a> or <a href="https://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
-
 
         <div class="site-main" id="sTop">
             <div class="site-header">
@@ -322,7 +346,7 @@ http://www.templatemo.com/tm-508-power
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">10:30</th>
-                                    <td></td>
+                                    <td><!--<script>writeTitle(3)</script>--></td>
                                     <td></td>
                                 </tr>
                                 <tr>
