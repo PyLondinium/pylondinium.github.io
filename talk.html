@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>PyLondinium 2018</title>
+    	<meta name="description" content="PyLondinium18 is a gathering of users and developers of the Python programming language in London">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+Based on:
+Power Template
+http://www.templatemo.com/tm-508-power
+-->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/templatemo_misc.css">
+        <link rel="stylesheet" href="css/templatemo_style.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+        <script src="https://rawgit.com/showdownjs/showdown/develop/dist/showdown.min.js"></script>
+        <script>
+          function loadJSON(callback) {   
+            var xobj = new XMLHttpRequest();
+            xobj.overrideMimeType("application/json");
+            xobj.open('GET', 'talks.json', false); 
+            xobj.onreadystatechange = function () {
+                  if (xobj.readyState == 4 && xobj.status == "200") {
+                    callback(xobj.responseText);
+                  }
+            };
+            xobj.send(null);  
+          }
+
+          var talks;
+          loadJSON(function(response) {
+              talks = JSON.parse(response);
+          });
+
+          function getQueryVariable(variable){
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i=0;i<vars.length;i++) {
+                    var pair = vars[i].split("=");
+                    if(pair[0] == variable){return pair[1];}
+            }
+            return(false);
+          }
+
+          var talk_id = getQueryVariable('talk_id');
+          if (talk_id && talks[talk_id]) {
+            var currentTalk = talks[talk_id];
+            var converter = new showdown.Converter();
+            var title = currentTalk.title;
+            var speaker = currentTalk.name;
+            var abstract = converter.makeHtml(currentTalk.abstract);
+            var description = converter.makeHtml(currentTalk.description);
+            var bio = converter.makeHtml(currentTalk.bio);
+          }
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="https://browsehappy.com/">Upgrade your browser today</a> or <a href="https://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+        <div class="site-main" id="sTop">
+            <div class="site-header">
+                <div class="main-header">
+                    <div class="container">
+                        <div id="menu-wrapper">
+                            <div class="row">
+                                <nav class="navbar navbar-inverse" role="navigation">
+                                    <div class="navbar-header">
+                                        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a href="/" class="navbar-brand">
+                                        <img class="visible-lg" style="float:left" src="img/logo.png" width="50" alt="">
+                                        PyLondinium18</a>
+                                        <div id="main-nav" class="collapse navbar-collapse">
+                                            <ul class="menu-first nav navbar-nav" style="margin-right: 20px;">
+                                                <li><a class="external" href="/#about">About</a></li>
+                                                <li><a class="external" href="/#schedule">Schedule</a></li>
+                                                <li><a class="external" href="/#the-venue">Venue</a></li>
+                                                <li><a class="external" href="/#sponsors">Sponsors</a></li>
+                                                <li><a class="external" href="mailto:pylondinium@gmail.com">Contact</a></li>
+                                            </ul>
+                                        </div> <!-- /.main-menu -->
+                                    </div>
+                                </nav>
+                            </div> <!-- /.row -->
+                        </div> <!-- /#menu-wrapper -->
+                    </div> <!-- /.container -->
+                </div> <!-- /.main-header -->
+            </div> <!-- /.site-header -->
+        </div> <!-- /.site-main -->
+
+        <div class="schedule" id="schedule">
+            <div class="container">
+                <div class="row" style="margin-bottom: 3rem;">
+                    <div class="col-md-14">
+                        <div class="section-heading">
+                            <div class="col-md-10 col-md-offset-1">
+                              <h4 style="text-transform: inherit;">
+                                <script>document.write(title)</script>
+                              </h4>
+                              <h5 style="font-size: 23px;">
+                                <script>document.write(speaker)</script>
+                              </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Abstract</div>
+                            <div style="text-align: justify; padding: 1rem 2rem;">
+                              <script>document.write(abstract)</script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Full Description</div>
+                            <div style="text-align: justify; padding: 1rem 2rem;">
+                                <script>document.write(description)</script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <script>document.write(`Something about ${speaker}`)</script>
+                            </div>
+                            <div style="text-align: justify; padding: 1rem 2rem;">
+                                <script>document.write(bio)</script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+        if (!currentTalk) {
+            var h1 = document.createElement('h1');
+            h1.innerHTML = "hello world!";
+            document.getElementById('schedule').innerHTML = '<div style="font-size: 20rem; padding: 18rem 1rem;">404</div>';
+          }
+        $(document).ready(function() {
+
+            // mobile nav toggle
+            $('#nav-toggle').on('click', function (event) {
+                event.preventDefault();
+                $('#main-nav').toggleClass("open");
+            });
+        });
+        </script>
+
+        <!-- templatemo 406 flex -->
+    </body>
+</html>
