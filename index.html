@@ -45,7 +45,7 @@ http://www.templatemo.com/tm-508-power
 
           function writeTitle(talkId) {
             if (talks && talks[talkId]){
-              document.write(`<a href="talk.html?talk_id=${talkId}">${talks[talkId].title}</a>`);
+              document.write(`<div class="text-left"><a href="talk.html?talk_id=${talkId}">${talks[talkId].title}</a></div>`);
             }
           }
         </script>
@@ -325,8 +325,8 @@ http://www.templatemo.com/tm-508-power
                             <table class="table">
                                 <tr>
                                     <th></th>
-                                    <th class="text-center">Ground Floor Auditorium</th>
-                                    <th class="text-center">7th Floor Auditiorium</th>
+                                    <th class="text-center" width="50%">Ground Floor Auditorium</th>
+                                    <th class="text-center" width="50%">7th Floor Auditiorium</th>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">9:30</th>
