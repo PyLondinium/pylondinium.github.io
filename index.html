@@ -43,10 +43,14 @@ http://www.templatemo.com/tm-508-power
               talks = JSON.parse(response);
           });
 
-          function writeTitle(talkId) {
-            if (talks && talks[talkId]){
-              document.write(`<div class="text-left"><a href="talk.html?talk_id=${talkId}">${talks[talkId].title}</a></div>`);
-            }
+          function writeTitle(talkId, cancelled) {
+              if (cancelled) {
+                document.write(`<i>Cancelled talk</i><br><div class="text-left"><strike>${talks[talkId].title}</strike></div>`);
+              } else{
+                if (talks && talks[talkId]){
+                  document.write(`<div class="text-left"><a href="talk.html?talk_id=${talkId}">${talks[talkId].title}</a></div>`);
+                }
+              }
           }
         </script>
     </head>
@@ -352,7 +356,7 @@ http://www.templatemo.com/tm-508-power
                                 <tr>
                                     <th scope="row" class="text-right">11:20</th>
                                     <td><script>writeTitle(2)</script></td>
-                                    <td><script>writeTitle(3)</script></td>
+                                    <td><script>writeTitle(3, true)</script></td>
                                 </tr>
                                 <tr>
                                     <th scope="row" class="text-right">11:50</th>
