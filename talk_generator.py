@@ -12,4 +12,4 @@ result = {
     ) for i, talk in enumerate(t for t in talks if t["state"] == "accepted")
 }
 
-json.dump(result, open("talks_today.json", "w"), indent=4)
+json.dump(result, open("talks_tomorrow.json", "w"), indent=4)
