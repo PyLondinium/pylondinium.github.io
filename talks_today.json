@@ -35,10 +35,10 @@
 		"bio": "I am a data science and machine learning enthusiast. I am a director and co-founder of Zentropy Pvt Ltd that primarily works on end to end implementations of data-science based projects. I have close to 11 years of industry experience and have been working in python for more than 4 years. Before finding Zentropy, I was working with a leading hedge fund for 10 years primarily in the middle and back office areas.\r\n\r\nI am also an active member of the Hyderabad Python community and had been one of the core team. I headed the sessions team in the Pyconf Hyderabad, 2017 and am a co-organizer in the Pycon India, 2018. I have given sessions on Python and data science in various local forums."
 	},
 	"5": {
-		"abstract": "Suppose you've been asked to build a website from scratch, suppose you know Python but you're new to web development, you don't much about frontend, what do you use? how do you stay up to date?\n\nThis talk will be based on the development of the new site of PyCon Italia, built with Django and React",
-		"name": "Patrick Arminio",
-		"title": "Building a Single Page Application with Python in 2018",
-		"description": "I'll do an overview of the technologies we are using for the PyCon Italia website, which are the following:\r\n\r\nPython 3.6+ \r\nDjango 2.0+\r\nGraphene 2.0+\r\nReact 16+\r\nTypeScript 2.8+\r\nApollo 2.2+\r\n\r\nand possibly others. The reason why I put + is that we are trying to always use the latest releases of the tools we are using, I'll be showing a couple of tools that are helping us to be on the cutting edge :)\r\n\r\nI might also do a comparison between React/Vue and other frameworks (same maybe for typescript vs flow vs js)",
+		"abstract": "What is your capacity? Does your backend scale? Are you on the edge of an outage? Find out with locust.io, a Python based load testing tool. Locust.io is open source, battle-tested, extensible and can help you sleep better at night ahead of a big product release.",
+		"name": "Ivan Matellanes",
+		"title": "Load test your backend with locust.io",
+		"description": "What is your capacity? Does your backend scale? Are you on the edge of an outage? Find out with locust.io, a Python based load testing tool. Locust.io is open source, battle-tested, extensible and can help you sleep better at night ahead of a big product release.",
 		"bio": ""
 	},
 	"6": {
