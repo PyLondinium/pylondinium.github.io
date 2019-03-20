@@ -35,10 +35,6 @@ body {
   color: #34383A;
 }
 
-.cover-container {
-  /*max-width: 42em;*/
-}
-
 .cover-heading {
   text-align: center;
 }
@@ -96,7 +92,7 @@ body {
  */
 .cover {
   padding: 0 1.5rem;
-  max-width: 42em;
+  max-width: 64em;
   margin: 0 auto;
 }
 .cover .btn-lg {
