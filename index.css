@@ -14,10 +14,13 @@ a:hover {
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #fdc;
-  background-color: #34383A;
-  border: .05rem solid #fff;
+  background-color: #B53826;
+  border: .05rem solid #F8D0BE;
 }
-
+@font-face {
+  font-family: 'Antonietta';
+  src: local('fonts/Antonietta-Caps'),
+}
 
 /*
  * Base structure
@@ -26,17 +29,30 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #fdc;
+  background-color: #F8D0BE;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
-body {
-  display: -ms-flexbox;
-  display: flex;
-  color: #34383A;
+
+.bg {
+  background: url('./img/london.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 50%;
 }
 
 .cover-heading {
+  font-family: 'Antonietta';
   text-align: center;
+  font-weight: 500;
+  color: #F8D0BE;
+}
+
+.red-text {
+  color: #B53826;
 }
 
 .lead {
@@ -47,17 +63,49 @@ body {
 /*
  * Header
  */
+
+.red-row{
+    background: rgba(181,56,38,0.82);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+    padding: 2em 5em;
+    background-size: cover;
+
+}
+.cfa{
+    margin: 4em auto;
+}
+.margin-row{
+    margin-top: 3em;
+}
+
+h2{
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+    color: white;
+}
+h3{
+    font-family: 'Antonietta';
+    color: #B53826;
+}
+
+.copy{color: white;}
 .masthead {
   margin-bottom: 2rem;
 }
 
 .masthead-brand {
+  font-family: 'Antonietta';
+  color: #F8D0BE;
   margin-bottom: 0;
 }
 
 .nav-masthead .nav-link {
+  font-family: 'Antonietta';
   padding: .25rem 0;
-  font-weight: 700;
+  /*font-weight: 700;*/
+  color: white;
   /*color: rgba(255, 255, 255, .5);*/
   background-color: transparent;
   border-bottom: .25rem solid transparent;
@@ -74,7 +122,7 @@ body {
 
 .nav-masthead .active {
   /*color: #fff;*/
-  border-bottom-color: #34383A;
+  border-bottom-color: #B53826;
 }
 
 @media (min-width: 48em) {
@@ -105,7 +153,8 @@ body {
  * Footer
  */
 .mastfoot {
-  color: #34383A;
+  color: #F8D0BE;
   text-align: center;
   margin-top: 2em;
+  background: rgba(181,56,38,0.82);
 }
