@@ -81,6 +81,11 @@ body {
     margin-top: 3em;
 }
 
+.red-text {
+  color: #B53826;
+  padding-bottom: 1.5em;
+}
+
 h2{
     font-size: 1.5rem;
     /*padding-bottom: 1em;*/
@@ -159,6 +164,4 @@ h3{
   background: rgba(181,56,38,0.82);
 }
 
-.red-text {
-  color: #B53826;
-}
+
