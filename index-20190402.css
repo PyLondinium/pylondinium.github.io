@@ -34,7 +34,9 @@ body {
 
 }
 
-
+.text-left{
+    text-align: left;
+}
 .bg {
   background: url('./img/london.jpg');
   background-size: cover;
