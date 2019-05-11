@@ -8,7 +8,7 @@ parser.add_argument("--base", default="https://pylondinium.org/", help="Base URL
 
 args = parser.parse_args()
 
-PAGES = ["index.html", "keynote.html", "venue.html", "coc.html"]
+PAGES = ["index.html", "keynote.html", "venue.html", "coc.html", "index-20190511.css"]
 
 env = Environment(loader=FileSystemLoader("templates"), autoescape=select_autoescape(["html", "xml"]))
 

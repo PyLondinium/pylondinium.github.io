@@ -19,7 +19,7 @@ a:hover {
 }
 @font-face {
   font-family: 'Antonietta';
-  src: url('/fonts/Antonietta-Caps.ttf')  format('truetype') ;
+  src: url('{{base}}/fonts/Antonietta-Caps.ttf')  format('truetype') ;
 }
 
 /*
