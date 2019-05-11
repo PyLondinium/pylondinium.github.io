@@ -1,241 +1,190 @@
 {% macro render_talk(i) -%}
 <a href="talks/talk-{{i}}.html">{{talks[i]['title']}}</a>
 {%- endmacro %}
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-
-    <link rel="stylesheet" href="index-20190402.css" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
-
-
-    <title>PyLondinium 2019</title>
-  </head>
-  <body>
-
-    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead">
-        <div class="inner">
-          <h3 class="masthead-brand red-text">PyLondinium 2019</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="/">Home</a>
-            <a class="nav-link" href="/keynote.html">Keynote Speakers</a>
-            <a class="nav-link active" href="/schedule.html">Schedule</a>
-            <a class="nav-link" href="/venue.html">Venue</a>
-            <a class="nav-link" href="/coc.html">Code of Conduct</a>
-            <a class="nav-link" href="/2018">2018</a>
-            <a class="nav-link" href="https://twitter.com/pylondinium">Twitter</a>
-          </nav>
-        </div>
-      </header>
-
-      <main role="main" class="inner cover container-fluid"  style="text-align: center;">
-        <div class="row">
-          <div class="col">
-            <h1 class="cover-heading red-text">Schedule</h1>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <table class="table">
-                    <tr>
-                        <th></th>
-                        <th colspan="3">Friday, 14th June 2019</th>
-                    </tr>
-                    <tr>
-                        <th>Full Day</th>
-                        <td>PyLondinium Girls</td>
-                        <td>Trans*Code Hackday</td>
-                        <td>Python Dojo</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <table class="table">
-                    <tr>
-                        <th></th>
-                        <th colspan="3">Saturday, 15th June 2019</th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th class="text-center" width="50%">Ground Floor Auditorium</th>
-                        <th class="text-center" width="50%">7th Floor Auditiorium</th>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">9:00</th>
-                        <td colspan="2" class="text-center">Registration</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">9:30</th>
-                        <td colspan="2" class="text-center">Opening <i>(Ground Floor)</i></td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">9:40</th>
-                        <td colspan="2" class="text-center">Keynote - Sylvain Corlay <i>(Ground Floor)</i></td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">10:30</th>
-                        <td>{{render_talk(0)}}</td>
-                        <td>{{render_talk(1)}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">11:00</th>
-                        <td colspan="2" class="text-center">Coffee</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">11:20</th>
-                        <td>{{render_talk(2)}}</td>
-                        <td>{{render_talk(3)}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">11:50</th>
-                        <td>{{render_talk(4)}}</td>
-                        <td>{{render_talk(5)}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">12:20</th>
-                        <td>{{render_talk(6)}}</td>
-                        <td>{{render_talk(7)}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">12:50</th>
-                        <td colspan="2" class="text-center">Lunch</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">14:30</th>
-                        <td>{{render_talk(8)}}</td>
-                        <td>{{render_talk(9)}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">15:00</th>
-                        <td>{{render_talk(10)}}</td>
-                        <td>{{render_talk(11)}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">15:30</th>
-                        <td colspan="2" class="text-center">Coffee</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">15:50</th>
-                        <td>{{render_talk(12)}}</td>
-                        <td>Open Space</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">16:20</th>
-                        <td>{{render_talk(13)}}</td>
-                        <td>Open Space</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">16:50</th>
-                        <td colspan="2" class="text-center">Keynote - Anna Ossowski <i>(Ground Floor)</i></td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">17:40</th>
-                        <td colspan="2" class="text-center">Lightning Talks <i>(Ground Floor)</i></td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">18:30</th>
-                        <td colspan="2" class="text-center">Close</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col">
-                <table class="table">
-                    <tr>
-                        <th></th>
-                        <th colspan="3">Sunday, 16th June 2019</th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th class="text-center">Ground Floor Auditorium</th>
-                        <th class="text-center">7th Floor Auditiorium</th>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">9:00</th>
-                        <td colspan="2" class="text-center">Registration</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">9:30</th>
-                        <td colspan="2" class="text-center">Opening <i>(Ground Floor)</i></td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">9:40</th>
-                        <td colspan="2" class="text-center">Keynote - Łukasz Langa <i>(Ground Floor)</i></td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">10:30</th>
-                        <td>{{render_talk(14)}}</td>
-                        <td>{{render_talk(15)}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">11:00</th>
-                        <td colspan="2" class="text-center">Coffee</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">11:20</th>
-                        <td>{{render_talk(16)}}</td>
-                        <td>{{render_talk(17)}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">11:50</th>
-                        <td>{{render_talk(18)}}</td>
-                        <td>{{render_talk(19)}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">12:20</th>
-                        <td>{{render_talk(20)}}</td>
-                        <td>{{render_talk(21)}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">12:50</th>
-                        <td colspan="2" class="text-center">Lunch</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">14:30</th>
-                        <td>{{render_talk(22)}}</td>
-                        <td>Open Space</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">15:00</th>
-                        <td>{{render_talk(23)}}</td>
-                        <td>Open Space</td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">15:30</th>
-                        <td colspan="2" class="text-center">Keynote - Brandon Rhodes <i>(Ground Floor)</i></td>
-                    </tr>
-                    <tr>
-                        <th scope="row" class="text-right">16:20</th>
-                        <td colspan="2" class="text-center">Close</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-      </main>
-
-      <footer class="mastfoot">
-        <div class="inner">
-          <p>Organised by the PyLondinium Organisation Team; we can be reached on <a href="mailto:pylondinium@gmail.com">pylondinium@gmail.com</a>.</p>
-        </div>
-      </footer>
+{% extends "base.html" %}
+{% set active_page = "Schedule" %}
+{% block content %}
+<div class="row">
+  <div class="col">
+    <h1 class="cover-heading red-text">Schedule</h1>
+  </div>
+</div>
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <tr>
+                <th></th>
+                <th colspan="3">Friday, 14th June 2019</th>
+            </tr>
+            <tr>
+                <th>Full Day</th>
+                <td>PyLondinium Girls</td>
+                <td>Trans*Code Hackday</td>
+                <td>Python Dojo</td>
+            </tr>
+        </table>
     </div>
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  </body>
-</html>
+</div>
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <tr>
+                <th></th>
+                <th colspan="3">Saturday, 15th June 2019</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th class="text-center" width="50%">Ground Floor Auditorium</th>
+                <th class="text-center" width="50%">7th Floor Auditiorium</th>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">9:00</th>
+                <td colspan="2" class="text-center">Registration</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">9:30</th>
+                <td colspan="2" class="text-center">Opening <i>(Ground Floor)</i></td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">9:40</th>
+                <td colspan="2" class="text-center">Keynote - Sylvain Corlay <i>(Ground Floor)</i></td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">10:30</th>
+                <td>{{render_talk(0)}}</td>
+                <td>{{render_talk(1)}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">11:00</th>
+                <td colspan="2" class="text-center">Coffee</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">11:20</th>
+                <td>{{render_talk(2)}}</td>
+                <td>{{render_talk(3)}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">11:50</th>
+                <td>{{render_talk(4)}}</td>
+                <td>{{render_talk(5)}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">12:20</th>
+                <td>{{render_talk(6)}}</td>
+                <td>{{render_talk(7)}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">12:50</th>
+                <td colspan="2" class="text-center">Lunch</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">14:30</th>
+                <td>{{render_talk(8)}}</td>
+                <td>{{render_talk(9)}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">15:00</th>
+                <td>{{render_talk(10)}}</td>
+                <td>{{render_talk(11)}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">15:30</th>
+                <td colspan="2" class="text-center">Coffee</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">15:50</th>
+                <td>{{render_talk(12)}}</td>
+                <td>Open Space</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">16:20</th>
+                <td>{{render_talk(13)}}</td>
+                <td>Open Space</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">16:50</th>
+                <td colspan="2" class="text-center">Keynote - Anna Ossowski <i>(Ground Floor)</i></td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">17:40</th>
+                <td colspan="2" class="text-center">Lightning Talks <i>(Ground Floor)</i></td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">18:30</th>
+                <td colspan="2" class="text-center">Close</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col">
+        <table class="table">
+            <tr>
+                <th></th>
+                <th colspan="3">Sunday, 16th June 2019</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th class="text-center">Ground Floor Auditorium</th>
+                <th class="text-center">7th Floor Auditiorium</th>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">9:00</th>
+                <td colspan="2" class="text-center">Registration</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">9:30</th>
+                <td colspan="2" class="text-center">Opening <i>(Ground Floor)</i></td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">9:40</th>
+                <td colspan="2" class="text-center">Keynote - Łukasz Langa <i>(Ground Floor)</i></td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">10:30</th>
+                <td>{{render_talk(14)}}</td>
+                <td>{{render_talk(15)}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">11:00</th>
+                <td colspan="2" class="text-center">Coffee</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">11:20</th>
+                <td>{{render_talk(16)}}</td>
+                <td>{{render_talk(17)}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">11:50</th>
+                <td>{{render_talk(18)}}</td>
+                <td>{{render_talk(19)}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">12:20</th>
+                <td>{{render_talk(20)}}</td>
+                <td>{{render_talk(21)}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">12:50</th>
+                <td colspan="2" class="text-center">Lunch</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">14:30</th>
+                <td>{{render_talk(22)}}</td>
+                <td>Open Space</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">15:00</th>
+                <td>{{render_talk(23)}}</td>
+                <td>Open Space</td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">15:30</th>
+                <td colspan="2" class="text-center">Keynote - Brandon Rhodes <i>(Ground Floor)</i></td>
+            </tr>
+            <tr>
+                <th scope="row" class="text-right">16:20</th>
+                <td colspan="2" class="text-center">Close</td>
+            </tr>
+        </table>
+    </div>
+</div>
+{% endblock %}

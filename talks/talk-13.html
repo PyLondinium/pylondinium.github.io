@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 
-    <link rel="stylesheet" href="../index-20190402.css" />
+    <link rel="stylesheet" href="http://localhost:8000//index-20190402.css" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
 
 
@@ -22,42 +24,44 @@
         <div class="inner">
           <h3 class="masthead-brand red-text">PyLondinium 2019</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="/">Home</a>
-            <a class="nav-link" href="/keynote.html">Keynote Speakers</a>
-            <a class="nav-link active" href="/schedule.html">Schedule</a>
-            <a class="nav-link" href="/venue.html">Venue</a>
-            <a class="nav-link" href="/coc.html">Code of Conduct</a>
-            <a class="nav-link" href="/2018">2018</a>
+            <a class="nav-link" href="http://localhost:8000/">Home</a>
+            <a class="nav-link" href="http://localhost:8000/keynote.html">Keynote Speakers</a>
+            <a class="nav-link active" href="http://localhost:8000/schedule.html">Schedule</a>
+            <a class="nav-link" href="http://localhost:8000/venue.html">Venue</a>
+            <a class="nav-link" href="http://localhost:8000/coc.html">Code of Conduct</a>
+            <a class="nav-link" href="http://localhost:8000/2018">2018</a>
             <a class="nav-link" href="https://twitter.com/pylondinium">Twitter</a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover container-fluid"  style="text-align: center;">
-        <div class="row">
-          <div class="col">
-            <h1 class="cover-heading red-text">From C to PEP-249: A Database API Odyssey </h1>
-            <h2 class="red-text">Matt Wozniski</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h3 class="cover-heading red-text">Abstract</h3>
-            <p>Most databases natively support a C API. Python has a standard for what database APIs should look like: PEP-249. I&#39;ll discuss my experiences adapting one particular database&#39;s C API into a PEP-249 compliant module, including a few clever solutions to overcome issues I encountered.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h3 class="cover-heading red-text">Description</h3>
-            <p>Most databases natively support a C API. Python has a standard for what database APIs should look like: PEP-249. I&#39;ll discuss my experiences adapting one particular database&#39;s C API into a PEP-249 compliant module, starting with building thin, Python-callable bindings to the C library and eventually implementing PEP-249&#39;s higher level abstractions on top of those low-level bindings. Along the way, I&#39;ll discuss several places where the database&#39;s behavior couldn&#39;t be easily adapted to the Python DB-API interface, and some clever solutions to bridging those gaps.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h3 class="cover-heading red-text">Bio</h3>
-            <p>Matt is a Senior Software Developer on Bloomberg&#39;s Python Infrastructure team, where he uses Python, C, and C++ to improve the depth, breadth and health of Bloomberg&#39;s Python ecosystem.</p>
-          </div>
-        </div>
+        
+<div class="row">
+  <div class="col">
+    <h1 class="cover-heading red-text">From C to PEP-249: A Database API Odyssey </h1>
+    <h2 class="red-text">Matt Wozniski</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h3 class="cover-heading red-text">Abstract</h3>
+    <p>Most databases natively support a C API. Python has a standard for what database APIs should look like: PEP-249. I&#39;ll discuss my experiences adapting one particular database&#39;s C API into a PEP-249 compliant module, including a few clever solutions to overcome issues I encountered.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h3 class="cover-heading red-text">Description</h3>
+    <p>Most databases natively support a C API. Python has a standard for what database APIs should look like: PEP-249. I&#39;ll discuss my experiences adapting one particular database&#39;s C API into a PEP-249 compliant module, starting with building thin, Python-callable bindings to the C library and eventually implementing PEP-249&#39;s higher level abstractions on top of those low-level bindings. Along the way, I&#39;ll discuss several places where the database&#39;s behavior couldn&#39;t be easily adapted to the Python DB-API interface, and some clever solutions to bridging those gaps.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h3 class="cover-heading red-text">Bio</h3>
+    <p>Matt is a Senior Software Developer on Bloomberg&#39;s Python Infrastructure team, where he uses Python, C, and C++ to improve the depth, breadth and health of Bloomberg&#39;s Python ecosystem.</p>
+  </div>
+</div>
+
       </main>
 
       <footer class="mastfoot">

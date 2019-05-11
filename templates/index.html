@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% set active_page = "Home" %}
+{% block content %}
+<div class="row red-row">
+    <img src="img/torch.png" />
+    <h1 class="cover-heading">PyLondinium 2019</h1>
+    <h2 style="width: 100%;">A Python conference for developers and users of Python</h2>
+    <p style="text-align: left; margin: 2em" class="copy">
+      PyLondinium is back for 2019, with a diverse program of sprints, workshops
+      and talks. We'll be returning to Bloomberg's European HQ in the heart of the City of
+      London, June 14th, 15th, and 16th, 2019.
+    </p>
+</div>
+
+<div class="row cfa">
+  <div class="col-sm" style="margin-top: 1em; margin-bottom: 1em;">
+    <a href="https://www.ticketea.co.uk/entradas-conferencia-pylondinium-2019/" class="btn btn-lg btn-secondary">Buy Tickets</a>
+  </div>
+  <div class="col-sm" style="margin-top: 1em; margin-bottom: 1em;">
+    <a href="/schedule.html" class="btn btn-lg btn-secondary">Schedule</a>
+  </div>
+  <div class="col-sm" style="margin-top: 1em; margin-bottom: 1em;">
+    <a href="http://eepurl.com/ga6KzH" class="btn btn-lg btn-secondary">Keep up to date</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    <h3>By The Community</h3>
+    <p>
+      PyLondinium is a conference organised volunteers in the City of
+      London. We're looking to provide a gathering opportunity for Python
+      enthusiasts and engineers in London.
+    </p>
+  </div>
+  <div class="col-sm">
+    <h3>For The Community</h3>
+    <p>
+      Tickets are meant to be affordable, and all profits from PyLondinium
+      will go directly to the PSF. We're following the principle of
+      "everyone pays"; everyone including speakers and organisers are
+      required to buy a ticket! Just by coming to the conference, you
+      are helping the wider Python community.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h3>With Thanks</h3>
+    <p>
+      The event wouldn't be possible without the following sponsors and
+      collaborators.
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    <a href="https://www.techatbloomberg.com/"><img src="img/bloomberg.png" style="max-height: 100px; max-width: 100%;" /></a>
+  </div>
+  <div class="col-sm">
+    <a href="https://www.python.org/psf/"><img src="img/psf.png" style="max-height: 100px; max-width: 100%;" /></a>
+  </div>
+</div>
+{% endblock %}

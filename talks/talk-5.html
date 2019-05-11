@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 
-    <link rel="stylesheet" href="../index-20190402.css" />
+    <link rel="stylesheet" href="http://localhost:8000//index-20190402.css" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
 
 
@@ -22,48 +24,50 @@
         <div class="inner">
           <h3 class="masthead-brand red-text">PyLondinium 2019</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link" href="/">Home</a>
-            <a class="nav-link" href="/keynote.html">Keynote Speakers</a>
-            <a class="nav-link active" href="/schedule.html">Schedule</a>
-            <a class="nav-link" href="/venue.html">Venue</a>
-            <a class="nav-link" href="/coc.html">Code of Conduct</a>
-            <a class="nav-link" href="/2018">2018</a>
+            <a class="nav-link" href="http://localhost:8000/">Home</a>
+            <a class="nav-link" href="http://localhost:8000/keynote.html">Keynote Speakers</a>
+            <a class="nav-link active" href="http://localhost:8000/schedule.html">Schedule</a>
+            <a class="nav-link" href="http://localhost:8000/venue.html">Venue</a>
+            <a class="nav-link" href="http://localhost:8000/coc.html">Code of Conduct</a>
+            <a class="nav-link" href="http://localhost:8000/2018">2018</a>
             <a class="nav-link" href="https://twitter.com/pylondinium">Twitter</a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover container-fluid"  style="text-align: center;">
-        <div class="row">
-          <div class="col">
-            <h1 class="cover-heading red-text">Intelligent K-Nearest Neighbours: Why NOT to use Euclidean distance in KNN for recommender systems</h1>
-            <h2 class="red-text">Aparna Pande</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h3 class="cover-heading red-text">Abstract</h3>
-            <p>We present a recommendation engine using Python that combines Agglomerative Hierarchical Clustering and K-Nearest Neighbors — an approach we call “Intelligent KNN.” This talk makes the case against using Euclidean distance to compute similarity, in a unique approach to get better recommendations.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h3 class="cover-heading red-text">Description</h3>
-            <p>A rule-based recommendation system, commonly found in practice, has a few downsides. While it may work well for data points that behave predictably, it may not work very well for outliers. In addition, users of the recommendation system in interactive applications may be unaware of the rules driving the recommendations, and therefore may be unable to modify/tweak the rules selectively for different datasets.
+        
+<div class="row">
+  <div class="col">
+    <h1 class="cover-heading red-text">Intelligent K-Nearest Neighbours: Why NOT to use Euclidean distance in KNN for recommender systems</h1>
+    <h2 class="red-text">Aparna Pande</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h3 class="cover-heading red-text">Abstract</h3>
+    <p>We present a recommendation engine using Python that combines Agglomerative Hierarchical Clustering and K-Nearest Neighbors — an approach we call “Intelligent KNN.” This talk makes the case against using Euclidean distance to compute similarity, in a unique approach to get better recommendations.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h3 class="cover-heading red-text">Description</h3>
+    <p>A rule-based recommendation system, commonly found in practice, has a few downsides. While it may work well for data points that behave predictably, it may not work very well for outliers. In addition, users of the recommendation system in interactive applications may be unaware of the rules driving the recommendations, and therefore may be unable to modify/tweak the rules selectively for different datasets.
 
 A common algorithm used by data scientists in recommendation systems is K-Nearest Neighbors, which uses Euclidean distance as a similarity measure. However, this may not translate accurately if the rule-based system cannot be represented by a combination of weights applied to the Euclidean distance.
 
 Our solution to make the rule-based system more flexible, transparent and adaptive was to use a recommendation system that periodically pre-clustered data points using Agglomerative Hierarchical Clustering and Jaccard Distance on the proprietary rules. We used that cluster classification as a feature in the KNN calculation. Python scikit-learn libraries allowed us to make this recommendation system interactive, providing frequent updates and near-real-time results.
 
 This talk will provide a high-level overview of the Machine Learning and mathematical concepts, detail our approach and reasoning behind switching a commonly used default similarity measure, and walk through its application using scikit-learn libraries.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h3 class="cover-heading red-text">Bio</h3>
-            <p>Aparna is a senior engineer for the Fixed Income Data and Analytics Platform at Bloomberg. She has an undergraduate degree in Computer Science (with a concentration in AI) from Cornell University. Since joining Bloomberg, Aparna has driven a number of initiatives in New York and London while increasing the breadth of the Fixed Income Data Platform, providing low latency cross-asset search and analytics capabilities to teams and functions at Bloomberg, using a suite of mainly open-source technologies.</p>
-          </div>
-        </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <h3 class="cover-heading red-text">Bio</h3>
+    <p>Aparna is a senior engineer for the Fixed Income Data and Analytics Platform at Bloomberg. She has an undergraduate degree in Computer Science (with a concentration in AI) from Cornell University. Since joining Bloomberg, Aparna has driven a number of initiatives in New York and London while increasing the breadth of the Fixed Income Data Platform, providing low latency cross-asset search and analytics capabilities to teams and functions at Bloomberg, using a suite of mainly open-source technologies.</p>
+  </div>
+</div>
+
       </main>
 
       <footer class="mastfoot">
