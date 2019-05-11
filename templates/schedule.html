@@ -1,5 +1,6 @@
 {% macro render_talk(i) -%}
-<a href="talks/talk-{{i}}.html">{{talks[i]['title']}}</a>
+<a href="talks/talk-{{i}}.html">{{talks[i]['title']}}</a><br />
+<i>{{talks[i]['name']}}</i>
 {%- endmacro %}
 {% extends "base.html" %}
 {% set active_page = "Schedule" %}
