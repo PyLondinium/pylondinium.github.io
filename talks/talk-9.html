@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="../index-20190402.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+
+
+    <title>PyLondinium 2019</title>
+  </head>
+  <body>
+
+    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead">
+        <div class="inner">
+          <h3 class="masthead-brand red-text">PyLondinium 2019</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/keynote.html">Keynote Speakers</a>
+            <a class="nav-link active" href="/schedule.html">Schedule</a>
+            <a class="nav-link" href="/venue.html">Venue</a>
+            <a class="nav-link" href="/coc.html">Code of Conduct</a>
+            <a class="nav-link" href="/2018">2018</a>
+            <a class="nav-link" href="https://twitter.com/pylondinium">Twitter</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover container-fluid"  style="text-align: center;">
+        <div class="row">
+          <div class="col">
+            <h1 class="cover-heading red-text">An introduction to ASGI, Asynchronous Server Gateway Interface</h1>
+            <h2 class="red-text">Philip Jones</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3 class="cover-heading red-text">Abstract</h3>
+            <p>WSGI has been a huge success, allowing for an ecosystem of servers and frameworks to exist and develop independently, however, WSGI is unable to support websockets or the new async/await syntax. 
+ASGI is the asynchronous spiritual successor to WSGI, with websockets and async support built in.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3 class="cover-heading red-text">Description</h3>
+            <p>If you develop web appliations in Python you will almost certainly be doing so using WSGI, with the most popular frameworks, Django and Flask, as well as the majority of others being based upon it. WSGI specifies the interface between servers and applications, simplified this interface is,
+
+    def application(environ, start_response):
+        start_response(&#34;200 OK&#34;, [(&#34;Content-Type&#34;, &#34;text/plain&#34;)])
+        return b&#34;Hello, World&#34;
+
+
+with the `application` called on each request. The request description and environment is specified in the `environ` dict and the `start_response` is called to send the response status code and headers before the body, which is returned by the `application`.
+
+ASGI also aims to specify the interface between servers and applications, only using the async/await syntax, the interface can be simplified to 
+
+    async def application(scope, receive, send):
+        await send({&#34;type&#34;: &#34;http.response.start&#34;, &#34;status&#34;: 200, &#34;headers&#34;: [(b&#34;Content-Type&#34;, &#34;text/plain&#34;)]})
+        await send({&#34;type&#34;: &#34;http.response.body&#34;, &#34;body&#34;: b&#34;Hello World&#34;})
+
+with the `application` awaited on each request and `scope` fulfilling a similar role to `environ`.
+
+In this talk I&#39;ll explain the above and how it limits WSGI and why ASGI is the solution. I&#39;ll also introduce the current ASGI ecosystem and features.
+
+## Outline
+
+- Introduction to WSGI (basic code)
+- WSGI ecosystem servers (Gunicorn, uWSGI, mod_wsgi) and frameworks (Flask, Django)
+- WSGI limitations e.g. Websockets
+- ASGI Introduction (basic code)
+- ASGI development and history
+- ASGI features, websockets, HTTP/2
+- ASGI ecosystem servers (Hypercorn, Daphne, Uvicorn) and frameworks (Starlette, Django, Quart).</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3 class="cover-heading red-text">Bio</h3>
+            <p>I am the head of engineering at Octopus Wealth. I authored the Quart and Hypercorn frameworks and help maintain a number of sans-io libraries in the python-hyper organisation. Previously I was a particle physicist working underground in Canada.</p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="mastfoot">
+        <div class="inner">
+          <p>Organised by the PyLondinium Organisation Team; we can be reached on <a href="mailto:pylondinium@gmail.com">pylondinium@gmail.com</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>

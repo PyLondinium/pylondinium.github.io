@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="../index-20190402.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+
+
+    <title>PyLondinium 2019</title>
+  </head>
+  <body>
+
+    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead">
+        <div class="inner">
+          <h3 class="masthead-brand red-text">PyLondinium 2019</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/keynote.html">Keynote Speakers</a>
+            <a class="nav-link active" href="/schedule.html">Schedule</a>
+            <a class="nav-link" href="/venue.html">Venue</a>
+            <a class="nav-link" href="/coc.html">Code of Conduct</a>
+            <a class="nav-link" href="/2018">2018</a>
+            <a class="nav-link" href="https://twitter.com/pylondinium">Twitter</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover container-fluid"  style="text-align: center;">
+        <div class="row">
+          <div class="col">
+            <h1 class="cover-heading red-text">Solving Python cold start issues in cloud infrastructure</h1>
+            <h2 class="red-text">Denys Makogon</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3 class="cover-heading red-text">Abstract</h3>
+            <p>First of all, this talk brings quite important, but still ignored the problem of python application startup time. This talk is very useful for people who strive for better python application performance. Also, I&#39;d like to share some techniques for performance profiling and problem-solving.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3 class="cover-heading red-text">Description</h3>
+            <p>## Intro
+
+We all do cloud applications, no matter if they were built with the cloud (an app that consumes cloud services) or for cloud (an app that was designed to run within cloud/container). The only thing that we, as Python community, haven’t talked out loud is imports performance that is so critical for business especially when you run your own business and cloud provider charges your own credit card. 
+
+## Problem area
+
+Until Python 3.7 it was quite challenging to profile application code dependencies and imports specifically. With a new imports profiler, Python developers can measure how much time each import takes at the startup. The interesting thing, a new profiler opened the whole new Python problem - cold start issue.
+In this talk, we will go through one very challenging case: Python in serverless and why most of the Python libraries were never been designed to start fast.
+
+If you’re going to attend this talk you’d get the following key takeaways:
+
+* Python coding strategy (placement, efficient and delayed imports)
+
+* New things in Python 3.7 related to imports
+
+* Module coding strategy.
+
+
+and my favourite ones:
+
+* Why you should be careful with python code in serverless.
+
+* How to profile cold start and measure overall startup time.
+
+* The best CPU/RAM configuration for performing cold startup time measures.
+
+
+## WHO is the intended audience for your talk and why you should attend it?
+
+First of all, developers, who got used to code a lot and host their apps in the cloud. Specifically, Python developers who performance testing and adjustments, while running applications in the cloud, but the key target audience here are the developers who do serverless applications and would like to learn some best practices and get into the problem area. 
+
+## WHAT are you going to be talking about and WHAT will people learn from your talk?
+
+In this talk, I&#39;ll try to explain why and showcase why there&#39;s a need to change the way we do Python applications in the clouds, why performance matters and why &#34;python was not designed to run on tight resources&#34; is a fake statement.
+
+## WHY is your talk important/interesting/useful? Explain why people would want to attend your talk.
+
+Let&#39;s decouple these questions onto three.
+
+### 1. Why my talk is important?
+
+Because most of the developers along with Python core team doesn&#39;t make much about the problem of performance, people think that Python and high performance is not something possible. So, during my talk, I&#39;d like to bring this topic to a wider audience around the globe in order to collect the feedback along with showcasing why it matters a lot to people who do cloud-based applications.
+
+### 2. Why my talk is interesting?
+
+Well, based on my experience, at almost all Python events around the world I&#39;ve attended, people were talking about ML/AI, Django. But nothing about Python performance, because, maybe people don&#39;t care about that much, but when you get a bill from your cloud provider you may wonder why does it have $$$$ amount to pay.
+
+### 3. Why my talk is useful?
+
+I&#39;ll be giving exact tips on how to make the code efficient and be less resource-intensive (at least I will try to). So, my talk will consist of speaking, coding, giving tips. Isn&#39;t that a good mix for a good talk?
+
+## HOW will you be delivering your talk?
+
+Speaking, giving tips, coding and expect to get a good discussion in QA session and after-talk activities.
+</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3 class="cover-heading red-text">Bio</h3>
+            <p>Software enthusiast focused on developing and designing platform and software as a service application for clouds. He’s a principal software developer in Oracle, concentrating on product development along with bringing well-designed and production ready integration with clouds solutions, contributor to various open source projects, cloud-related technologies along having fun with IoT devices and photography.
+Denis is a regular attendee and speaker at OpenStack summits (Atlanta, Austin, Paris, Barcelona, Boston) and PyCon Hong Kong 2016, 2017, PyCon Italy 2018. co-author of OpenStack Application development, OpenStack Trove Essentials.
+</p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="mastfoot">
+        <div class="inner">
+          <p>Organised by the PyLondinium Organisation Team; we can be reached on <a href="mailto:pylondinium@gmail.com">pylondinium@gmail.com</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
