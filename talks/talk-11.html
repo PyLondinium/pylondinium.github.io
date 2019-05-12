@@ -39,53 +39,48 @@
         
 <div class="row">
   <div class="col">
-    <h1 class="cover-heading red-text">An introduction to ASGI, Asynchronous Server Gateway Interface</h1>
+    <h1 class="red-text">An introduction to ASGI, Asynchronous Server Gateway Interface</h1>
     <h2 class="red-text">Philip Jones</h2>
   </div>
 </div>
 <div class="row">
-  <div class="col">
-    <h3 class="cover-heading red-text">Abstract</h3>
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Abstract</h2>
     <p>WSGI has been a huge success, allowing for an ecosystem of servers and frameworks to exist and develop independently, however, WSGI is unable to support websockets or the new async/await syntax. 
 ASGI is the asynchronous spiritual successor to WSGI, with websockets and async support built in.</p>
   </div>
 </div>
 <div class="row">
-  <div class="col">
-    <h3 class="cover-heading red-text">Description</h3>
-    <p>If you develop web appliations in Python you will almost certainly be doing so using WSGI, with the most popular frameworks, Django and Flask, as well as the majority of others being based upon it. WSGI specifies the interface between servers and applications, simplified this interface is,
-
-    def application(environ, start_response):
-        start_response(&#34;200 OK&#34;, [(&#34;Content-Type&#34;, &#34;text/plain&#34;)])
-        return b&#34;Hello, World&#34;
-
-
-with the `application` called on each request. The request description and environment is specified in the `environ` dict and the `start_response` is called to send the response status code and headers before the body, which is returned by the `application`.
-
-ASGI also aims to specify the interface between servers and applications, only using the async/await syntax, the interface can be simplified to 
-
-    async def application(scope, receive, send):
-        await send({&#34;type&#34;: &#34;http.response.start&#34;, &#34;status&#34;: 200, &#34;headers&#34;: [(b&#34;Content-Type&#34;, &#34;text/plain&#34;)]})
-        await send({&#34;type&#34;: &#34;http.response.body&#34;, &#34;body&#34;: b&#34;Hello World&#34;})
-
-with the `application` awaited on each request and `scope` fulfilling a similar role to `environ`.
-
-In this talk I&#39;ll explain the above and how it limits WSGI and why ASGI is the solution. I&#39;ll also introduce the current ASGI ecosystem and features.
-
-## Outline
-
-- Introduction to WSGI (basic code)
-- WSGI ecosystem servers (Gunicorn, uWSGI, mod_wsgi) and frameworks (Flask, Django)
-- WSGI limitations e.g. Websockets
-- ASGI Introduction (basic code)
-- ASGI development and history
-- ASGI features, websockets, HTTP/2
-- ASGI ecosystem servers (Hypercorn, Daphne, Uvicorn) and frameworks (Starlette, Django, Quart).</p>
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Description</h2>
+    <p>If you develop web appliations in Python you will almost certainly be doing so using WSGI, with the most popular frameworks, Django and Flask, as well as the majority of others being based upon it. WSGI specifies the interface between servers and applications, simplified this interface is,</p>
+<pre><code>def application(environ, start_response):
+    start_response("200 OK", [("Content-Type", "text/plain")])
+    return b"Hello, World"
+</code></pre>
+<p>with the <code>application</code> called on each request. The request description and environment is specified in the <code>environ</code> dict and the <code>start_response</code> is called to send the response status code and headers before the body, which is returned by the <code>application</code>.</p>
+<p>ASGI also aims to specify the interface between servers and applications, only using the async/await syntax, the interface can be simplified to </p>
+<pre><code>async def application(scope, receive, send):
+    await send({"type": "http.response.start", "status": 200, "headers": [(b"Content-Type", "text/plain")]})
+    await send({"type": "http.response.body", "body": b"Hello World"})
+</code></pre>
+<p>with the <code>application</code> awaited on each request and <code>scope</code> fulfilling a similar role to <code>environ</code>.</p>
+<p>In this talk I'll explain the above and how it limits WSGI and why ASGI is the solution. I'll also introduce the current ASGI ecosystem and features.</p>
+<h3>Outline</h3>
+<ul>
+<li>Introduction to WSGI (basic code)</li>
+<li>WSGI ecosystem servers (Gunicorn, uWSGI, mod_wsgi) and frameworks (Flask, Django)</li>
+<li>WSGI limitations e.g. Websockets</li>
+<li>ASGI Introduction (basic code)</li>
+<li>ASGI development and history</li>
+<li>ASGI features, websockets, HTTP/2</li>
+<li>ASGI ecosystem servers (Hypercorn, Daphne, Uvicorn) and frameworks (Starlette, Django, Quart).</li>
+</ul>
   </div>
 </div>
 <div class="row">
-  <div class="col">
-    <h3 class="cover-heading red-text">Bio</h3>
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Bio</h2>
     <p>I am the head of engineering at Octopus Wealth. I authored the Quart and Hypercorn frameworks and help maintain a number of sans-io libraries in the python-hyper organisation. Previously I was a particle physicist working underground in Canada.</p>
   </div>
 </div>

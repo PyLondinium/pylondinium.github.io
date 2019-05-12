@@ -3,26 +3,26 @@
 {% block content %}
 <div class="row">
   <div class="col">
-    <h1 class="cover-heading red-text">{{talk['title']}}</h1>
+    <h1 class="red-text">{{talk['title']}}</h1>
     <h2 class="red-text">{{talk['name']}}</h2>
   </div>
 </div>
 <div class="row">
-  <div class="col">
-    <h3 class="cover-heading red-text">Abstract</h3>
-    <p>{{talk['abstract']}}</p>
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Abstract</h2>
+    {{talk['abstract']|markdown}}
   </div>
 </div>
 <div class="row">
-  <div class="col">
-    <h3 class="cover-heading red-text">Description</h3>
-    <p>{{talk['description']}}</p>
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Description</h2>
+    {{talk['description']|markdown}}
   </div>
 </div>
 <div class="row">
-  <div class="col">
-    <h3 class="cover-heading red-text">Bio</h3>
-    <p>{{talk['bio']}}</p>
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Bio</h2>
+    {{talk['bio']|markdown}}
   </div>
 </div>
 {% endblock %}

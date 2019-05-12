@@ -39,32 +39,28 @@
         
 <div class="row">
   <div class="col">
-    <h1 class="cover-heading red-text">Integrating Systems Using Python with pandas</h1>
+    <h1 class="red-text">Integrating Systems Using Python with pandas</h1>
     <h2 class="red-text">Michelle Nabavian</h2>
   </div>
 </div>
 <div class="row">
-  <div class="col">
-    <h3 class="cover-heading red-text">Abstract</h3>
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Abstract</h2>
     <p>pandas is more than a data science tool. Its features readily solve the complexities of system integration. We use pandas to create an integration layer that abstracts the interface and data model of end-points, allowing independently-designed new and old systems to inter-operate without redesign.</p>
   </div>
 </div>
 <div class="row">
-  <div class="col">
-    <h3 class="cover-heading red-text">Description</h3>
-    <p>The problem we aimed to solve broadly was to (1) replace the data inputs of a newly acquired product and software and to (2) replace this system with a more modern one in phases. We had already accomplished being able to run this acquired system on our hardware, and it was backing a critical product in production. Hence, an additional requirement was to (3) ensure the production system continued to run by limiting any large-scale changes to its interfaces or data model.
-
-The destination interface required a file input. We created a Python service to translate acquired data from our modern system into files in the form required by the destination systems. The Python code read file configurations that were easy to create. Python was useful and new configurations did not require re-linking code to deploy them.
-
-We also needed to deliver different variants of the same data, joined or concatenated data, or pivoted data to different end points. End-point applications had different expectations. We were able to use pandas to solve all of these data transformation problems. We did not need to change the system where we acquired the data. And we could use either a database or an existing file as a data input. We then used pandas to suck the data into an in-memory data structure to which it was easy to apply merges, concatenations and pivots. The result was that neither the producer of the data or the consumer of the data needed to make any concessions for the other’s data model or interface.
-
-In conclusion, the pandas feature set enabled us to build an integration facility to connect and transfer data between diverse systems with different requirements related to the form and content of the payload – without the producers and consumers of the data needing to change or be aware of the other’s data model or interface.
-</p>
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Description</h2>
+    <p>The problem we aimed to solve broadly was to (1) replace the data inputs of a newly acquired product and software and to (2) replace this system with a more modern one in phases. We had already accomplished being able to run this acquired system on our hardware, and it was backing a critical product in production. Hence, an additional requirement was to (3) ensure the production system continued to run by limiting any large-scale changes to its interfaces or data model.</p>
+<p>The destination interface required a file input. We created a Python service to translate acquired data from our modern system into files in the form required by the destination systems. The Python code read file configurations that were easy to create. Python was useful and new configurations did not require re-linking code to deploy them.</p>
+<p>We also needed to deliver different variants of the same data, joined or concatenated data, or pivoted data to different end points. End-point applications had different expectations. We were able to use pandas to solve all of these data transformation problems. We did not need to change the system where we acquired the data. And we could use either a database or an existing file as a data input. We then used pandas to suck the data into an in-memory data structure to which it was easy to apply merges, concatenations and pivots. The result was that neither the producer of the data or the consumer of the data needed to make any concessions for the other’s data model or interface.</p>
+<p>In conclusion, the pandas feature set enabled us to build an integration facility to connect and transfer data between diverse systems with different requirements related to the form and content of the payload – without the producers and consumers of the data needing to change or be aware of the other’s data model or interface.</p>
   </div>
 </div>
 <div class="row">
-  <div class="col">
-    <h3 class="cover-heading red-text">Bio</h3>
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Bio</h2>
     <p>Michelle Nabavian is an engineering team lead at Bloomberg. She has 16 years of experience in the financial data industry, during which time she has developed trading applications, as well as a financial index production system. In all of her projects, Michelle has understood that live production systems are usually integrated systems, whether it be for the reason of integrating different applications, or a new system with a legacy counterpart. Michelle is interested in building solutions for systems that eliminate risk and greatly improve the ability to develop code quickly without impacting other systems in an ecosystem.</p>
   </div>
 </div>

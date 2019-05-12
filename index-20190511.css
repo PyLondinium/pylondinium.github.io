@@ -89,6 +89,11 @@ body {
   padding-bottom: 1.5em;
 }
 
+.talk h2, .talk h3, .talk h4, .talk h5, .talk h6 {
+  font-family: 'Antonietta';
+  color: #B53826;
+}
+
 .date {
   color: #B53826;
   font-weight: bold;
@@ -98,11 +103,6 @@ body {
   border-top-color: #B53826;
 }
 
-h2{
-    font-size: 1.5rem;
-    /*padding-bottom: 1em;*/
-    color: white;
-}
 h3{
     font-family: 'Antonietta';
     color: #B53826;

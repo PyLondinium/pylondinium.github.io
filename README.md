@@ -6,4 +6,4 @@ Source code for [pylondinium.org](https://pylondinium.org/).
 
 The website is generated from the 1) the templates in the `templates` directory and 2) the talk info in `talks.json`. The generated output is kept in the same tree as the templates to keep the `git`-fu as simple as humanly possible, whilst making edits easier.
 
-To regenerate the website, just run `python3.7 generate.py`; optionally, you can pass in a `--base` argument that changes the base URL. For example, I set it to `http://localhost:8000/` for local development and `https://alexchamberlain.github.io/pylondinium.github.io/` to post a demo. You'll need `jinja2` installed, because it's just too awesome not to use; I use a `virtualenv`.
+To regenerate the website, just run `python3.7 generate.py`; optionally, you can pass in a `--base` argument that changes the base URL. For example, I set it to `http://localhost:8000/` for local development and `https://alexchamberlain.github.io/pylondinium.github.io/` to post a demo. You'll need `jinja2` and `markdown` installed, because they're just too awesome not to use; I use a `virtualenv`.
