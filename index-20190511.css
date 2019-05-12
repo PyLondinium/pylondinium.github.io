@@ -17,6 +17,7 @@ a:hover {
   background-color: #B53826;
   border: .05rem solid #F8D0BE;
 }
+
 @font-face {
   font-family: 'Antonietta';
   src: url('https://pylondinium.org//fonts/Antonietta-Caps.ttf')  format('truetype') ;
@@ -86,6 +87,15 @@ body {
 .red-text {
   color: #B53826;
   padding-bottom: 1.5em;
+}
+
+.date {
+  color: #B53826;
+  font-weight: bold;
+}
+
+.table td, .table th {
+  border-top-color: #B53826;
 }
 
 h2{

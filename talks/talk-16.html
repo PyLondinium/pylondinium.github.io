@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 
-    <link rel="stylesheet" href="https://pylondinium.org//index-20190511.css" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://pylondinium.org/index-20190511.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,700" rel="stylesheet">
 
 
     <title>PyLondinium 2019</title>
@@ -39,34 +39,30 @@
         
 <div class="row">
   <div class="col">
-    <h1 class="cover-heading red-text">The soul of the beast: Everything about Python&#39;s grammar</h1>
-    <h2 class="red-text">Pablo Galindo Salgado</h2>
+    <h1 class="cover-heading red-text">Build your Python Extensions with Rust!</h1>
+    <h2 class="red-text">Paul Ganssle</h2>
   </div>
 </div>
 <div class="row">
   <div class="col">
     <h3 class="cover-heading red-text">Abstract</h3>
-    <p>In this talk, we will learn what lies at the core of the Python programming language: the Python Grammar. This is a journey that will try to answer how the technical details of the grammar relate to the properties of Python we know and love and how it can be modified to add new exciting features.</p>
+    <p>Looking to write compiled Python extensions, but don&#39;t want to worry about memory safety bugs or reference counting? You can write it in Rust! In this talk, I&#39;ll go into details about how to write Rust extension modules, and the trade-offs between different approaches you can take.</p>
   </div>
 </div>
 <div class="row">
   <div class="col">
     <h3 class="cover-heading red-text">Description</h3>
-    <p>We will try to answer a straightforward question: What makes Python so easy to learn and read? Other languages also have a robust community and a compelling ecosystem and standard library, but Python somehow stands out on how easy it is to understand existing code and how quickly and pleasantly people can learn it. In this talk, we learn everything about the Python Grammar: how the Python parser is automatically generated and how it works, how the technical details of the grammar translate into the properties of the language we all know and love, what are the limitations that prevent some grammar rules you would think are trivial from being implement, and finally, how to include new grammar rules in CPython in the form of a new operator with an associated protocol.  
+    <p>When your Python needs to be fast, one powerful tool is the ability to write compiled extension modules. Normally this is done using the C API, but that requires managing reference counts and memory allocation and is nearly impossible to do *correctly* for non-trivial programs. In this talk, we&#39;ll look at how you can write extension modules in Rust - a memory-safe systems programming language that is increasingly popular as a replacement for C and C++, and the [most loved language in the Stack Overflow developer survey 4 years running](https://insights.stackoverflow.com/survey/2019#technology-_-most-loved-dreaded-and-wanted-languages).
 
-The audience will discover one of the core pieces of the language that sits at the middle of the decisions about what new rules can or cannot be implemented in the Python programming language. They will learn how the particularities of the grammar limit what can be achieved but also serve to maintain the language consistent, powerful but straightforward. Attendants will learn how core developers solved some challenging scenarios that arise as a consequence of said limitations or how others cannot be resolved unless Python gets a significant transformation in the internal mechanism that parses the grammar. Finally, they will learn how a new rule is added to the CPython grammar, serving as a perfect example of how all the pieces come together. In summary, the audience will gain a more technical response to why people perceive the Python programming language as easy but powerful one and at the same time will gain some insight on how to understand and extend the pieces that form it. This talk will not only help members of the audience understand better the design of the language a how grammars and parser work, but will also help people wanting to contribute to CPython understanding the general structure of the compiler pipeline and how to work on it. 
+This talk will focus on `pyo3` and `milksnake`, two popular libraries that provide very different approaches for writing Rust extensions; it will cover a basic introduction to the libraries, and compare their relative strengths and weaknesses. These will also be compared to C and Cython extension modules from a performance, safety and maintainability perspective.
 
-This talk is for those that want to understand Python a bit deeper: not only how everything works under the hood but also what are the technical decisions in its making and what are the consequences. The talk is targeted to all Python programmers, no matter the skill level as everyone will find something for their particular level of expertise:
-
-- Beginner programmers will be introduced in the topic of language grammars and will learn what a Grammar is and what are the building blocks. Also, the audience members at this level will gain insight into how everything is thread together in CPython.
-
-- Medium and advanced programmers will learn some in-depth technical details and how they relate to features they already know and understand. The talk not only will try to enlight some new areas related to grammar technicalities, parser features and design and CPython implementation details but will also connect many pieces of information to explain how the small technical decisions impact the bigger picture.</p>
+This talk assumes some *basic* familiarity with extension modules. It is aimed at Pythonistas who are interested in Rust and at people who currently write extension modules and are looking for a safer alternative to the C API. Familiarity with the syntax and basic concepts of Rust is helpful, but the talk should be understandable even for Rust beginners.</p>
   </div>
 </div>
 <div class="row">
   <div class="col">
     <h3 class="cover-heading red-text">Bio</h3>
-    <p>Pablo Galindo Salgado works in the Python Infrastructure team at the Software Infrastructure department at Bloomberg L.P. He is a CPython core developer and a Theoretical Physicist specialized in general relativity and black hole physics. He has also a cat but he does not code. </p>
+    <p>Paul Ganssle is a software developer and open source contributor and maintainer of the python-dateutil and setuptools libraries. He lives in New York City and is interested in programming, languages, wearable electronics and sensors.</p>
   </div>
 </div>
 

@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 
-    <link rel="stylesheet" href="https://pylondinium.org//index-20190511.css" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://pylondinium.org/index-20190511.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,700" rel="stylesheet">
 
 
     <title>PyLondinium 2019</title>
@@ -39,32 +39,35 @@
         
 <div class="row">
   <div class="col">
-    <h1 class="cover-heading red-text">Intelligent K-Nearest Neighbours: Why NOT to use Euclidean distance in KNN for recommender systems</h1>
-    <h2 class="red-text">Aparna Pande</h2>
+    <h1 class="cover-heading red-text">What is your ML test score?</h1>
+    <h2 class="red-text">Tania Allard</h2>
   </div>
 </div>
 <div class="row">
   <div class="col">
     <h3 class="cover-heading red-text">Abstract</h3>
-    <p>We present a recommendation engine using Python that combines Agglomerative Hierarchical Clustering and K-Nearest Neighbors — an approach we call “Intelligent KNN.” This talk makes the case against using Euclidean distance to compute similarity, in a unique approach to get better recommendations.</p>
+    <p>Machine learning in production is different to ML in R&amp;D environment. So how can you test your ML models successfully before even reaching this stage? This session will present a number of techniques to test your ML quality and decay in both your R&amp;D and production environments appropriately.</p>
   </div>
 </div>
 <div class="row">
   <div class="col">
     <h3 class="cover-heading red-text">Description</h3>
-    <p>A rule-based recommendation system, commonly found in practice, has a few downsides. While it may work well for data points that behave predictably, it may not work very well for outliers. In addition, users of the recommendation system in interactive applications may be unaware of the rules driving the recommendations, and therefore may be unable to modify/tweak the rules selectively for different datasets.
+    <p>Using machine learning in real-world applications and production systems is a very complex task involving issues rarely encountered in toy problems, R&amp;D environments, or offline cases.
+Testing, monitoring, and logging are key considerations for assessing the decay, current status and production-readiness of machine learning systems.  But how much of these is enough? Where do we even get started? Who should be responsible for the testing and the monitoring? How often have you heard the phrase “test in production” when it comes to machine learning? If your answer is: “too often” perhaps you need to change your strategy.
 
-A common algorithm used by data scientists in recommendation systems is K-Nearest Neighbors, which uses Euclidean distance as a similarity measure. However, this may not translate accurately if the rule-based system cannot be represented by a combination of weights applied to the Euclidean distance.
-
-Our solution to make the rule-based system more flexible, transparent and adaptive was to use a recommendation system that periodically pre-clustered data points using Agglomerative Hierarchical Clustering and Jaccard Distance on the proprietary rules. We used that cluster classification as a feature in the KNN calculation. Python scikit-learn libraries allowed us to make this recommendation system interactive, providing frequent updates and near-real-time results.
-
-This talk will provide a high-level overview of the Machine Learning and mathematical concepts, detail our approach and reasoning behind switching a commonly used default similarity measure, and walk through its application using scikit-learn libraries.</p>
+ We will cover some of the most frequent issues encountered in real-life ML applications and how we can make our systems more robust. We will also consider a number of indicators pointing to decay of models or algorithms in production systems.
+By the end of the talk, the audience will have a clear rubric with actionable tests and examples to ensure that the quality or a model in production is adequate. It will also provide valuable guidelines to help engineers, DevOps, and data scientist to evaluate and improve the quality of ML models before they even reach production stage.
+</p>
   </div>
 </div>
 <div class="row">
   <div class="col">
     <h3 class="cover-heading red-text">Bio</h3>
-    <p>Aparna is a senior engineer for the Fixed Income Data and Analytics Platform at Bloomberg. She has an undergraduate degree in Computer Science (with a concentration in AI) from Cornell University. Since joining Bloomberg, Aparna has driven a number of initiatives in New York and London while increasing the breadth of the Fixed Income Data Platform, providing low latency cross-asset search and analytics capabilities to teams and functions at Bloomberg, using a suite of mainly open-source technologies.</p>
+    <p>Tania is a Research Engineer and Microsoft developer advocate with vast experience in academic research and industrial environments. Her main areas of expertise are within data-intensive applications, scientific computing, and machine learning. One of her main areas of expertise is the improvement of processes, reproducibility, and transparency in research, data science and artificial intelligence.  
+Over the last few years, she has trained hundreds of people on scientific computing reproducible workflows and ML models testing, monitoring and scaling and delivered talks on the topic worldwide. 
+
+She is passionate about mentoring, open source, and its community and is involved in a number of initiatives aimed to build more diverse and inclusive communities. She is also a contributor, maintainer, and developer of a number of open source projects and the Founder of Pyladies NorthWest UK.
+</p>
   </div>
 </div>
 

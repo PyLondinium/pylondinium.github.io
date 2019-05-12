@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 
-    <link rel="stylesheet" href="https://pylondinium.org//index-20190511.css" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://pylondinium.org/index-20190511.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,700" rel="stylesheet">
 
 
     <title>PyLondinium 2019</title>
@@ -39,70 +39,33 @@
         
 <div class="row">
   <div class="col">
-    <h1 class="cover-heading red-text"> The Adventures of pip and pacman: A Tale of Package Managers </h1>
-    <h2 class="red-text">László Kiss Kollár</h2>
+    <h1 class="cover-heading red-text">Integrating Systems Using Python with pandas</h1>
+    <h2 class="red-text">Michelle Nabavian</h2>
   </div>
 </div>
 <div class="row">
   <div class="col">
     <h3 class="cover-heading red-text">Abstract</h3>
-    <p>Installing Python packages can be frustrating. If we follow common practices and `pip install` packages, we will likely hit issues. Installing and managing Python packages is easier if we follow some simple rules. Let’s look at best practices for Python package management via real-world examples.</p>
+    <p>pandas is more than a data science tool. Its features readily solve the complexities of system integration. We use pandas to create an integration layer that abstracts the interface and data model of end-points, allowing independently-designed new and old systems to inter-operate without redesign.</p>
   </div>
 </div>
 <div class="row">
   <div class="col">
     <h3 class="cover-heading red-text">Description</h3>
-    <p>## Overview
+    <p>The problem we aimed to solve broadly was to (1) replace the data inputs of a newly acquired product and software and to (2) replace this system with a more modern one in phases. We had already accomplished being able to run this acquired system on our hardware, and it was backing a critical product in production. Hence, an additional requirement was to (3) ensure the production system continued to run by limiting any large-scale changes to its interfaces or data model.
 
-Installing Python packages can be frustrating for new (and even not so new) users of Python. If we simply follow the common practice and pip install packages, we will likely hit issues. Installing and managing Python packages is actually quite simple, as long as we follow a few simple rules.
+The destination interface required a file input. We created a Python service to translate acquired data from our modern system into files in the form required by the destination systems. The Python code read file configurations that were easy to create. Python was useful and new configurations did not require re-linking code to deploy them.
 
-This talk will look at best practices for Python package management using real world examples.  
+We also needed to deliver different variants of the same data, joined or concatenated data, or pivoted data to different end points. End-point applications had different expectations. We were able to use pandas to solve all of these data transformation problems. We did not need to change the system where we acquired the data. And we could use either a database or an existing file as a data input. We then used pandas to suck the data into an in-memory data structure to which it was easy to apply merges, concatenations and pivots. The result was that neither the producer of the data or the consumer of the data needed to make any concessions for the other’s data model or interface.
 
-## Audience
-
-This talk is aimed mostly at people new to Python but it should also be informative for seasoned users. No Python programming knowledge should be necessary to follow along. 
-
-After the talk the audience should have a good idea how to install and manage Python packages in the most common situations. 
-
-
-## Outline
-
-### Introduction
-- A few words about myself
-- Why deliver a talk about package management
-
-### Packaging tools
-- pip
-- OS package managers
-- Which one should we use?
-
-### System-wide package installations
-- What are system-wide or global installations?
-- Let&#39;s try to install something with `pip install` (and look at how it can fail)
-- `sudo pip install` and why you should never do it
-- Conclusion
-
-### Non system-wide package installations
-- What are non system-wide installations?
-- User scheme installations, and some situations it doesn&#39;t work so well
-- Virtual environments
-    - What is it
-    - How to create and manage them
-    - Working inside a virtual environment
-    - Using them without activation
-- Conda
-- Conclusion
-
-### Closing
-- Lessons learned
-- The recipe for successful package management
+In conclusion, the pandas feature set enabled us to build an integration facility to connect and transfer data between diverse systems with different requirements related to the form and content of the payload – without the producers and consumers of the data needing to change or be aware of the other’s data model or interface.
 </p>
   </div>
 </div>
 <div class="row">
   <div class="col">
     <h3 class="cover-heading red-text">Bio</h3>
-    <p>László Kiss Kollár is a senior software engineer at Bloomberg, where he works on the Python Infrastructure team. He has close to 15 years of industry experience and has worked on a diverse set of projects, such as optimising code for vector processors, creating a distributed JVM, and generating automatically produced news content.</p>
+    <p>Michelle Nabavian is an engineering team lead at Bloomberg. She has 16 years of experience in the financial data industry, during which time she has developed trading applications, as well as a financial index production system. In all of her projects, Michelle has understood that live production systems are usually integrated systems, whether it be for the reason of integrating different applications, or a new system with a legacy counterpart. Michelle is interested in building solutions for systems that eliminate risk and greatly improve the ability to develop code quickly without impacting other systems in an ecosystem.</p>
   </div>
 </div>
 
