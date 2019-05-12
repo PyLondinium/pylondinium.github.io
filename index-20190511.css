@@ -17,9 +17,10 @@ a:hover {
   background-color: #B53826;
   border: .05rem solid #F8D0BE;
 }
+
 @font-face {
   font-family: 'Antonietta';
-  src: url('/fonts/Antonietta-Caps.ttf')  format('truetype') ;
+  src: url('https://pylondinium.org//fonts/Antonietta-Caps.ttf')  format('truetype') ;
 }
 
 /*
@@ -88,11 +89,20 @@ body {
   padding-bottom: 1.5em;
 }
 
-h2{
-    font-size: 1.5rem;
-    /*padding-bottom: 1em;*/
-    color: white;
+.talk h2, .talk h3, .talk h4, .talk h5, .talk h6 {
+  font-family: 'Antonietta';
+  color: #B53826;
 }
+
+.date {
+  color: #B53826;
+  font-weight: bold;
+}
+
+.table td, .table th {
+  border-top-color: #B53826;
+}
+
 h3{
     font-family: 'Antonietta';
     color: #B53826;
@@ -165,5 +175,4 @@ h3{
   margin-top: 2em;
   background: rgba(181,56,38,0.82);
 }
-
 

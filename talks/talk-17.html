@@ -1,0 +1,85 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="https://pylondinium.org/index-20190511.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,700" rel="stylesheet">
+
+
+    <title>PyLondinium 2019</title>
+  </head>
+  <body>
+
+    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead">
+        <div class="inner">
+          <h3 class="masthead-brand red-text">PyLondinium 2019</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="https://pylondinium.org/">Home</a>
+            <a class="nav-link" href="https://pylondinium.org/keynote.html">Keynote Speakers</a>
+            <a class="nav-link active" href="https://pylondinium.org/schedule.html">Schedule</a>
+            <a class="nav-link" href="https://pylondinium.org/venue.html">Venue</a>
+            <a class="nav-link" href="https://pylondinium.org/coc.html">Code of Conduct</a>
+            <a class="nav-link" href="https://pylondinium.org/2018">2018</a>
+            <a class="nav-link" href="https://twitter.com/pylondinium">Twitter</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover container-fluid"  style="text-align: center;">
+        
+<div class="row">
+  <div class="col">
+    <h1 class="red-text">Integrating Systems Using Python with pandas</h1>
+    <h2 class="red-text">Michelle Nabavian</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Abstract</h2>
+    <p>pandas is more than a data science tool. Its features readily solve the complexities of system integration. We use pandas to create an integration layer that abstracts the interface and data model of end-points, allowing independently-designed new and old systems to inter-operate without redesign.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Description</h2>
+    <p>The problem we aimed to solve broadly was to (1) replace the data inputs of a newly acquired product and software and to (2) replace this system with a more modern one in phases. We had already accomplished being able to run this acquired system on our hardware, and it was backing a critical product in production. Hence, an additional requirement was to (3) ensure the production system continued to run by limiting any large-scale changes to its interfaces or data model.</p>
+<p>The destination interface required a file input. We created a Python service to translate acquired data from our modern system into files in the form required by the destination systems. The Python code read file configurations that were easy to create. Python was useful and new configurations did not require re-linking code to deploy them.</p>
+<p>We also needed to deliver different variants of the same data, joined or concatenated data, or pivoted data to different end points. End-point applications had different expectations. We were able to use pandas to solve all of these data transformation problems. We did not need to change the system where we acquired the data. And we could use either a database or an existing file as a data input. We then used pandas to suck the data into an in-memory data structure to which it was easy to apply merges, concatenations and pivots. The result was that neither the producer of the data or the consumer of the data needed to make any concessions for the other’s data model or interface.</p>
+<p>In conclusion, the pandas feature set enabled us to build an integration facility to connect and transfer data between diverse systems with different requirements related to the form and content of the payload – without the producers and consumers of the data needing to change or be aware of the other’s data model or interface.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Bio</h2>
+    <p>Michelle Nabavian is an engineering team lead at Bloomberg. She has 16 years of experience in the financial data industry, during which time she has developed trading applications, as well as a financial index production system. In all of her projects, Michelle has understood that live production systems are usually integrated systems, whether it be for the reason of integrating different applications, or a new system with a legacy counterpart. Michelle is interested in building solutions for systems that eliminate risk and greatly improve the ability to develop code quickly without impacting other systems in an ecosystem.</p>
+  </div>
+</div>
+
+      </main>
+
+      <footer class="mastfoot">
+        <div class="inner">
+          <p>Organised by the PyLondinium Organisation Team; we can be reached on <a href="mailto:pylondinium@gmail.com">pylondinium@gmail.com</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
