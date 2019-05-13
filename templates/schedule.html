@@ -1,5 +1,5 @@
 {% macro render_talk(i) -%}
-<a href="talks/talk-{{i}}.html">{{talks[i]['title']}}</a><br />
+<a href="{{base}}talks/talk-{{i}}.html">{{talks[i]['title']}}</a><br />
 <i>{{talks[i]['name']}}</i>
 {%- endmacro %}
 {% extends "base.html" %}
@@ -18,8 +18,8 @@
             </tr>
             <tr>
                 <th>Full Day</th>
-                <td>PyLondinium Girls</td>
-                <td>Trans*Code Hackday</td>
+                <td><a href="https://girls.pylondinium.org/">PyLondinium Girls</a></td>
+                <td><a href="{{base}}talks/transcode.html">Trans*Code</a></td>
                 <td>Python Dojo</td>
             </tr>
         </table>

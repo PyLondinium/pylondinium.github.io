@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% set active_page = "Schedule" %}
+{% block content %}
+<div class="row">
+  <div class="col">
+    <h1 class="red-text">{{talk['title']}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Description</h2>
+    {{talk['description']|markdown}}
+  </div>
+</div>
+<div class="row cfa">
+  <div class="col" style="margin-top: 1em; margin-bottom: 1em;">
+    <a href="{{talk['signup']}}" class="btn btn-lg btn-secondary">Sign Up</a>
+  </div>
+</div>
+{% endblock %}

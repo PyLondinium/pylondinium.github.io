@@ -25,11 +25,20 @@ template = env.get_template("schedule.html")
 with open("talks.json") as fo:
     talks = json.load(fo)
 
+with open("workshops.json") as fo:
+    workshops = json.load(fo)
+
 with open("schedule.html", "w") as fo:
-    fo.write(template.render(base=args.base, talks=talks))
+    fo.write(template.render(base=args.base, talks=talks, workshops=workshops))
 
 template = env.get_template("talk.html")
 
 for i, t in enumerate(talks):
     with open(f"talks/talk-{i}.html", "w") as fo:
+        fo.write(template.render(base=args.base, talk=t))
+
+template = env.get_template("workshop.html")
+
+for k, t in workshops.items():
+    with open(f"talks/{k}.html", "w") as fo:
         fo.write(template.render(base=args.base, talk=t))
