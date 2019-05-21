@@ -168,9 +168,9 @@
         "bio": "Marco Bonzanini is a freelance Data Scientist based in London, UK. Co-organiser of the PyData London meet-up and co-chair of the PyData London 2018-19 conference. Python publications: Mastering Social Media Mining with Python (book, PacktPub, 2016) Data Analysis with Python (video course, PacktPub, 2017) Practical Python Data Science Techniques (video course, PacktPub, 2017)"
     },
     {
-        "title": "pandas ecosystem 2019",
+        "title": "Breaking pandas",
         "name": "Marc Garcia",
-        "abstract": "pandas is becoming a de-facto standard for data manipulation and analysis in Python. But it's not alone, many other projects are being developed to help in this task. In this talk pandas and its ecosystem will be presented.",
+        "abstract": "pandas is becoming a de-facto standard for data manipulation and analysis in Python. But it's not alone, many other projects are being developed to help in this task. In this talk I will present some ideas on how to break pandas to have a healthier ecosystem.",
         "description": "pandas is more than 10 years old now. In this time, it became almost a standard for building data pipelines and perform data analysis in Python. As the popularity of the project grows, it also grows the number of projects that depend or interact with pandas.\r\n\r\nThis talk will cover this ecosystem of projects around pandas, mainly in the prespective of scalability and performance. Discussing for example how projects like Arrow are key for the future of pandas, or how Dask is overcoming pandas limitations.\r\n\r\nIn a first part, the talk will focus on pandas itself, its components, and its architecture. This will give the required context for a second part, that will explain related projects, how they interact with pandas, and what the whole ecosystem can offer to users.",
         "bio": "Marc Garcia is a pandas core developer and Python fellow.\r\n\r\nHe has been working in Python for more than 12 years, and worked as data scientist and data engineer for different companies such as Bank of America, Tesco and Badoo.\r\nHe is a regular speaker at PyData and PyCon conferences, and a regular organizer of sprints."
     },
