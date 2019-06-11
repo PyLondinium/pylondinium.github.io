@@ -39,31 +39,29 @@
         
 <div class="row">
   <div class="col">
-    <h1 class="red-text">What is your ML test score?</h1>
-    <h2 class="red-text">Tania Allard</h2>
+    <h1 class="red-text">Is it a bird? Is it a plane? Accelerating Python with numba</h1>
+    <h2 class="red-text">Juan Luis Cano</h2>
   </div>
 </div>
 <div class="row">
   <div class="col talk" style="text-align: justify">
     <h2 style="text-align: center">Abstract</h2>
-    <p>Machine learning in production is different to ML in R&amp;D environment. So how can you test your ML models successfully before even reaching this stage? This session will present a number of techniques to test your ML quality and decay in both your R&amp;D and production environments appropriately.</p>
+    
   </div>
 </div>
 <div class="row">
   <div class="col talk" style="text-align: justify">
     <h2 style="text-align: center">Description</h2>
-    <p>Using machine learning in real-world applications and production systems is a very complex task involving issues rarely encountered in toy problems, R&amp;D environments, or offline cases.
-Testing, monitoring, and logging are key considerations for assessing the decay, current status and production-readiness of machine learning systems.  But how much of these is enough? Where do we even get started? Who should be responsible for the testing and the monitoring? How often have you heard the phrase “test in production” when it comes to machine learning? If your answer is: “too often” perhaps you need to change your strategy.</p>
-<p>We will cover some of the most frequent issues encountered in real-life ML applications and how we can make our systems more robust. We will also consider a number of indicators pointing to decay of models or algorithms in production systems.
-By the end of the talk, the audience will have a clear rubric with actionable tests and examples to ensure that the quality or a model in production is adequate. It will also provide valuable guidelines to help engineers, DevOps, and data scientist to evaluate and improve the quality of ML models before they even reach production stage.</p>
+    <p>We are lucky there are very diverse solutions to make Python faster that have been in use for a while: from wrapping compiled languages (NumPy), to altering the Python syntax to make it more suitable to compilers (Cython), to using a subset of it which can in turn be accelerated (numba), and many many more. However, each of these options has a tradeoff, and there is no silver bullet.</p>
+<p>Some years ago I chose numba for poliastro, my personal project, because of its simplicity, effectiveness, and not having to learn a hybrid dialect of Python. numba compiles numerical Python code on the fly using the LLVM machinery, producing extremely performant code... when it works!</p>
+<p>On the other hand, even though it is quite mature as a library and most of the Python syntax and NumPy functions are supported, there are still some limitations that affect its usage. In particular, I strive to offer a high-level API with support for physical units (extensions of NumPy) and reusable functions which can be passed as arguments, which sometimes require using complex objects or introspective Python behavior which is not available.</p>
+<p>In this talk we will introduce numba, describe its basic usage, and then discuss the strategies and workarounds we have developed to overcome its limitations, as well as some advanced numba features we can leverage. We will focus mostly on CPUs, and mention very briefly its GPU capabilities.</p>
   </div>
 </div>
 <div class="row">
   <div class="col talk" style="text-align: justify">
     <h2 style="text-align: center">Bio</h2>
-    <p>Tania is a Research Engineer and Microsoft developer advocate with vast experience in academic research and industrial environments. Her main areas of expertise are within data-intensive applications, scientific computing, and machine learning. One of her main areas of expertise is the improvement of processes, reproducibility, and transparency in research, data science and artificial intelligence.<br />
-Over the last few years, she has trained hundreds of people on scientific computing reproducible workflows and ML models testing, monitoring and scaling and delivered talks on the topic worldwide. </p>
-<p>She is passionate about mentoring, open source, and its community and is involved in a number of initiatives aimed to build more diverse and inclusive communities. She is also a contributor, maintainer, and developer of a number of open source projects and the Founder of Pyladies NorthWest UK.</p>
+    <p>Chair of the Spanish branch of the PSF, Aerospace engineer, open source software advocate, European citizen, urban cyclist, '70s hard rock lover, frustrated musician, human being. Obsessed with pursuing impossible dreams and democratizing the access to knowledge.</p>
   </div>
 </div>
 
