@@ -1,6 +1,6 @@
 # Speaker Release Agreement (CC BY-NC-SA)
 
-_This speaker release agreement allows the organisers to host and archive the EuroPython conference videos and presentations for future years._
+_This speaker release agreement allows the organisers to host and archive the PyLondinium conference videos and presentations for future years._
 
 The speaker grants to the organisers of PyLondinium 2019 the non-exclusive right to record, reproduce and distribute the speaker's presentation in electronic format via the World Wide Web, as well as the right to migrate or convert your presentation to any medium or format for the purpose of preservation and/or continued distribution.
 
