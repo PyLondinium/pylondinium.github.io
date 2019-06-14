@@ -39,29 +39,34 @@
         
 <div class="row">
   <div class="col">
-    <h1 class="red-text">Intelligent K-Nearest Neighbours: Why NOT to use Euclidean distance in KNN for recommender systems</h1>
-    <h2 class="red-text">Aparna Pande</h2>
+    <h1 class="red-text">Making Multiple Inheritance not work in Python</h1>
+    <h2 class="red-text">Andy Fundinger</h2>
   </div>
 </div>
 <div class="row">
   <div class="col talk" style="text-align: justify">
     <h2 style="text-align: center">Abstract</h2>
-    <p>We present a recommendation engine using Python that combines Agglomerative Hierarchical Clustering and K-Nearest Neighbors — an approach we call “Intelligent KNN.” This talk makes the case against using Euclidean distance to compute similarity, in a unique approach to get better recommendations.</p>
+    <p>This talk is a destructive examination of the workings of Python's inheritance model. We'll learn how it works by breaking it. After starting with a discussion of how we got to where we are, we'll then move on to the hooks that Python gives us to interact with it.</p>
   </div>
 </div>
 <div class="row">
   <div class="col talk" style="text-align: justify">
     <h2 style="text-align: center">Description</h2>
-    <p>A rule-based recommendation system, commonly found in practice, has a few downsides. While it may work well for data points that behave predictably, it may not work very well for outliers. In addition, users of the recommendation system in interactive applications may be unaware of the rules driving the recommendations, and therefore may be unable to modify/tweak the rules selectively for different datasets.</p>
-<p>A common algorithm used by data scientists in recommendation systems is K-Nearest Neighbors, which uses Euclidean distance as a similarity measure. However, this may not translate accurately if the rule-based system cannot be represented by a combination of weights applied to the Euclidean distance.</p>
-<p>Our solution to make the rule-based system more flexible, transparent and adaptive was to use a recommendation system that periodically pre-clustered data points using Agglomerative Hierarchical Clustering and Jaccard Distance on the proprietary rules. We used that cluster classification as a feature in the KNN calculation. Python scikit-learn libraries allowed us to make this recommendation system interactive, providing frequent updates and near-real-time results.</p>
-<p>This talk will provide a high-level overview of the Machine Learning and mathematical concepts, detail our approach and reasoning behind switching a commonly used default similarity measure, and walk through its application using scikit-learn libraries.</p>
+    <p>This talk is a destructive examination of the workings of Python's inheritance model. We'll learn how it works by breaking it. After starting with a discussion of how we got to where we are, we'll then move on to the hooks that Python gives us to interact with it. These include using the metaclass to alter the class during construction, as well as using the __init_subclass__ and __subclasscheck__ hooks.</p>
+<p>Particular examples will include:</p>
+<ul>
+<li>Implementing interfaces in Python</li>
+<li>Turning inheritance off in favor of explicit reuse</li>
+<li>Simplifying classes by disabling a selection of features you don't wish to use</li>
+</ul>
+<p>While none of these are meant to be particularly useful implementations, they make good use cases to show the machinery.</p>
   </div>
 </div>
 <div class="row">
   <div class="col talk" style="text-align: justify">
     <h2 style="text-align: center">Bio</h2>
-    <p>Aparna is a senior engineer for the Fixed Income Data and Analytics Platform at Bloomberg. She has an undergraduate degree in Computer Science (with a concentration in AI) from Cornell University. Since joining Bloomberg, Aparna has driven a number of initiatives in New York and London while increasing the breadth of the Fixed Income Data Platform, providing low latency cross-asset search and analytics capabilities to teams and functions at Bloomberg, using a suite of mainly open-source technologies.</p>
+    <p>Andy Fundinger is a senior engineer at Bloomberg, where he develops Python applications in the Data License group and supports Python developers throughout the firm through the company's Python Guild. Andy has spoken several times at PyGotham, as well as other conferences such as QCon, PyCaribbean, and EuroPython.</p>
+<p>In the past, Andy has worked on private equity and credit risk applications, web services, and virtual worlds. Andy holds a Masters of Engineering from Stevens Institute of Technology. In his spare time, Andy is a maker who works on Internet of Things (IoT) projects and teaches classes at MakerBar in Hoboken, NJ.</p>
   </div>
 </div>
 
