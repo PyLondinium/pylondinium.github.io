@@ -1,4 +1,4 @@
-# Speaker Release Agreement (CC BY-NC-SA)
+# Speaker Release Agreement (CC BY-NC-SA)
 
 _This speaker release agreement allows the organisers to host and archive the PyLondinium conference videos and presentations for future years._
 
@@ -15,10 +15,6 @@ The society will make the presentation available to the public using a Creative 
  
 
 Recordings will be made available on the PyLondinium YouTube Channel.
-
- 
-
-For printed copies:
 
 [   ] Read, understood and agreed.
 
