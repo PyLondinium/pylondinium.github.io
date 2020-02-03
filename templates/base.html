@@ -1,0 +1,58 @@
+{% set active_page = active_page|default('Home') -%}
+
+{% macro nav_link(label, link) -%}
+<a class="nav-link{% if label == active_page %} active{% endif %}" href="{{base}}{{link}}">{{label}}</a>
+{%- endmacro %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="{{base}}index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,700" rel="stylesheet">
+
+
+    <title>PyLondinium 2020</title>
+  </head>
+  <body>
+
+    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead">
+        <div class="inner">
+          <h3 class="masthead-brand red-text">PyLondinium 2020</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            {{nav_link("Home", "")}}
+            {{nav_link("Venue", "venue.html")}}
+            {{nav_link("Code of Conduct", "coc.html")}}
+            <a class="nav-link" href="https://twitter.com/pylondinium">Twitter</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover container-fluid"  style="text-align: center;">
+        {% block content %}{% endblock %}
+      </main>
+
+      <footer class="mastfoot">
+        <div class="inner">
+          <p>Organised by the PyLondinium Organisation Team; we can be reached on <a href="mailto:pylondinium@gmail.com">pylondinium@gmail.com</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
