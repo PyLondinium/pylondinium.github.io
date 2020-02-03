@@ -1,0 +1,83 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="https://pylondinium.org/2019/index-20190511.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,700" rel="stylesheet">
+
+
+    <title>PyLondinium 2019</title>
+  </head>
+  <body>
+
+    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead">
+        <div class="inner">
+          <h3 class="masthead-brand red-text">PyLondinium 2019</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="https://pylondinium.org/2019/">Home</a>
+            <a class="nav-link" href="https://pylondinium.org/2019/keynote.html">Keynote Speakers</a>
+            <a class="nav-link active" href="https://pylondinium.org/2019/schedule.html">Schedule</a>
+            <a class="nav-link" href="https://pylondinium.org/2019/venue.html">Venue</a>
+            <a class="nav-link" href="https://pylondinium.org/2019/coc.html">Code of Conduct</a>
+            <a class="nav-link" href="https://twitter.com/pylondinium">Twitter</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover container-fluid"  style="text-align: center;">
+        
+<div class="row">
+  <div class="col">
+    <h1 class="red-text">Build your Python Extensions with Rust!</h1>
+    <h2 class="red-text">Paul Ganssle</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Abstract</h2>
+    <p>Looking to write compiled Python extensions, but don't want to worry about memory safety bugs or reference counting? You can write it in Rust! In this talk, I'll go into details about how to write Rust extension modules, and the trade-offs between different approaches you can take.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Description</h2>
+    <p>When your Python needs to be fast, one powerful tool is the ability to write compiled extension modules. Normally this is done using the C API, but that requires managing reference counts and memory allocation and is nearly impossible to do <em>correctly</em> for non-trivial programs. In this talk, we'll look at how you can write extension modules in Rust - a memory-safe systems programming language that is increasingly popular as a replacement for C and C++, and the <a href="https://insights.stackoverflow.com/survey/2019#technology-_-most-loved-dreaded-and-wanted-languages">most loved language in the Stack Overflow developer survey 4 years running</a>.</p>
+<p>This talk will focus on <code>pyo3</code> and <code>milksnake</code>, two popular libraries that provide very different approaches for writing Rust extensions; it will cover a basic introduction to the libraries, and compare their relative strengths and weaknesses. These will also be compared to C and Cython extension modules from a performance, safety and maintainability perspective.</p>
+<p>This talk assumes some <em>basic</em> familiarity with extension modules. It is aimed at Pythonistas who are interested in Rust and at people who currently write extension modules and are looking for a safer alternative to the C API. Familiarity with the syntax and basic concepts of Rust is helpful, but the talk should be understandable even for Rust beginners.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col talk" style="text-align: justify">
+    <h2 style="text-align: center">Bio</h2>
+    <p>Paul Ganssle is a software developer and open source contributor and maintainer of the python-dateutil and setuptools libraries. He lives in New York City and is interested in programming, languages, wearable electronics and sensors.</p>
+  </div>
+</div>
+
+      </main>
+
+      <footer class="mastfoot">
+        <div class="inner">
+          <p>Organised by the PyLondinium Organisation Team; we can be reached on <a href="mailto:pylondinium@gmail.com">pylondinium@gmail.com</a>.</p>
+        </div>
+      </footer>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>

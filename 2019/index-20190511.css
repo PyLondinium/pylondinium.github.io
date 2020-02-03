@@ -1,0 +1,178 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #34383A;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #fdc;
+  background-color: #B53826;
+  border: .05rem solid #F8D0BE;
+}
+
+@font-face {
+  font-family: 'Antonietta';
+  src: url('https://pylondinium.org/2019//fonts/Antonietta-Caps.ttf')  format('truetype') ;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #F8D0BE;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.text-left{
+    text-align: left;
+}
+.bg {
+  background: url('./img/london.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 50%;
+}
+
+.cover-heading {
+  font-family: 'Antonietta';
+  text-align: center;
+  font-weight: 500;
+  color: #F8D0BE;
+  width: 100%;
+}
+
+.lead {
+  text-align: center;
+}
+
+
+/*
+ * Header
+ */
+
+.red-row{
+    background: rgba(181,56,38,0.82);
+    overflow: hidden;
+    z-index: 2;
+    background-size: cover;
+
+}
+.red-row img {margin: 0 auto; max-height: 200px;}
+
+@media (min-width: 576px) {
+  .red-row {padding: 2em 5em;}
+}
+
+.cfa{
+    margin: 4em auto;
+}
+.margin-row{
+    margin-top: 3em;
+}
+
+.red-text {
+  color: #B53826;
+  padding-bottom: 1.5em;
+}
+
+.talk h2, .talk h3, .talk h4, .talk h5, .talk h6 {
+  font-family: 'Antonietta';
+  color: #B53826;
+}
+
+.date {
+  color: #B53826;
+  font-weight: bold;
+}
+
+.table td, .table th {
+  border-top-color: #B53826;
+}
+
+h3{
+    font-family: 'Antonietta';
+    color: #B53826;
+}
+
+.copy{color: white;}
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  font-family: 'Antonietta';
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  font-family: 'Antonietta';
+  padding: .25rem 0;
+  /*font-weight: 700;*/
+  color: #B53826;
+  /*color: rgba(255, 255, 255, .5);*/
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+  color: white;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  /*color: #fff;*/
+  border-bottom-color: #B53826;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  max-width: 64em;
+  margin: 0 auto;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: #F8D0BE;
+  text-align: center;
+  margin-top: 2em;
+  background: rgba(181,56,38,0.82);
+}
+
